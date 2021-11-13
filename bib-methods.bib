@@ -1,0 +1,125 @@
+% Encoding: UTF-8
+
+
+%-----------------------------------------------------------------------------
+%   TIGHT BINDING
+%-----------------------------------------------------------------------------
+
+% Density Function Tight Binding 3
+@article{dftb3,
+  author    = {Michael Gaus and Qiang Cui and Marcus Elstner},
+  journal   = {J. Chem. Theory Comput.},
+  title     = {{DFTB}3: Extension of the Self-Consistent-Charge Density-Functional Tight-Binding Method ({SCC}-{DFTB})},
+  year      = {2011},
+  month     = {mar},
+  note      = {DFTB3},
+  number    = {4},
+  pages     = {931--948},
+  volume    = {7},
+  doi       = {10.1021/ct100684s},
+  publisher = {American Chemical Society ({ACS})},
+}
+
+
+%-----------------------------------------------------------------------------
+%   COUNTERPOISE CORRECTION
+%-----------------------------------------------------------------------------
+
+% Geometrical Counterpoise Correction
+@article{gcp,
+  author    = {Holger Kruse and Stefan Grimme},
+  journal   = {J. Chem. Phys.},
+  title     = {A geometrical correction for the inter- and intra-molecular basis set superposition error in Hartree-Fock and density functional theory calculations for large systems},
+  year      = {2012},
+  month     = {apr},
+  number    = {15},
+  pages     = {154101},
+  volume    = {136},
+  doi       = {10.1063/1.3700154},
+  publisher = {{AIP} Publishing},
+}
+
+@article{gcp-periodic,
+  author    = {Jan Gerit Brandenburg and Maristella Alessio and Bartolomeo Civalleri and Michael F. Peintinger and Thomas Bredow and Stefan Grimme},
+  journal   = {J. Phys. Chem. A},
+  title     = {Geometrical Correction for the Inter- and Intramolecular Basis Set Superposition Error in Periodic Density Functional Theory Calculations},
+  year      = {2013},
+  month     = {sep},
+  number    = {38},
+  pages     = {9282--9292},
+  volume    = {117},
+  doi       = {10.1021/jp406658y},
+  publisher = {American Chemical Society ({ACS})},
+}
+
+
+%-----------------------------------------------------------------------------
+%   DISPERSION CORRECTION
+%-----------------------------------------------------------------------------
+
+% DFT-D3
+@article{dftd3,
+  author     = {Grimme, Stefan and Antony, Jens and Ehrlich, Stephan and Krieg, Helge},
+  journal    = {J. Chem. Phys.},
+  title      = {A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu},
+  year       = {2010},
+  number     = {15},
+  pages      = {154104},
+  volume     = {132},
+  abstract   = {The method of dispersion correction as an add-on to standard Kohn-Sham density functional theory (DFT-D) has been refined regarding higher accuracy, broader range of applicability, and less empiricism. The main new ingredients are atom-pairwise specific dispersion coefficients and cutoff radii that are both computed from first principles. The coefficients for new eighth-order dispersion terms are computed using established recursion relations. System (geometry) dependent information is used for the first time in a DFT-D type approach by employing the new concept of fractional coordination numbers (CN). They are used to interpolate between dispersion coefficients of atoms in different chemical environments. The method only requires adjustment of two global parameters for each density functional, is asymptotically exact for a gas of weakly interacting neutral atoms, and easily allows the computation of atomic forces. Three-body nonadditivity terms are considered. The method has been assessed on standard benchmark sets for inter- and intramolecular noncovalent interactions with a particular emphasis on a consistent description of light and heavy element systems. The mean absolute deviations for the S22 benchmark set of noncovalent interactions for 11 standard density functionals decrease by 15{\%}-40{\%} compared to the previous (already accurate) DFT-D version. Spectacular improvements are found for a tripeptide-folding model and all tested metallic systems. The rectification of the long-range behavior and the use of more accurate C(6) coefficients also lead to a much better description of large (infinite) systems as shown for graphene sheets and the adsorption of benzene on an Ag(111) surface. For graphene it is found that the inclusion of three-body terms substantially (by about 10{\%}) weakens the interlayer binding. We propose the revised DFT-D method as a general tool for the computation of the dispersion energy in molecules and solids of any kind with DFT and related (low-cost) electronic structure methods for large systems.},
+  doi        = {10.1063/1.3382344},
+  file       = {http://www.ncbi.nlm.nih.gov/pubmed/20423165},
+  pagination = {page},
+}
+
+% cite together with dftd3
+@article{bj-damping,
+  author     = {Grimme, Stefan and Ehrlich, Stephan and Goerigk, Lars},
+  journal    = {J. Comput. Chem.},
+  title      = {Effect of the damping function in dispersion corrected density functional theory},
+  year       = {2011},
+  number     = {7},
+  pages      = {1456--1465},
+  volume     = {32},
+  doi        = {10.1002/jcc.21759},
+  pagination = {page},
+}
+
+% DFT-D4
+@article{dftd4-1,
+  author    = {Eike Caldeweyher and Christoph Bannwarth and Stefan Grimme},
+  journal   = {J. Chem. Phys.},
+  title     = {Extension of the D3 dispersion coefficient model},
+  year      = {2017},
+  month     = {jul},
+  number    = {3},
+  pages     = {034112},
+  volume    = {147},
+  doi       = {10.1063/1.4993215},
+  publisher = {{AIP} Publishing},
+}
+@article{dftd4-2,
+  author    = {Eike Caldeweyher and Sebastian Ehlert and Andreas Hansen and Hagen Neugebauer and Sebastian Spicher and Christoph Bannwarth and Stefan Grimme},
+  journal   = {J. Chem. Phys.},
+  title     = {A generally applicable atomic-charge dependent London dispersion correction},
+  year      = {2019},
+  month     = {apr},
+  number    = {15},
+  pages     = {154122},
+  volume    = {150},
+  doi       = {10.1063/1.5090222},
+  publisher = {{AIP} Publishing},
+}
+@article{dftd4-periodic,
+  author    = {Eike Caldeweyher and Jan-Michael Mewes and Sebastian Ehlert and Stefan Grimme},
+  journal   = {Phys. Chem. Chem. Phys.},
+  title     = {Extension and evaluation of the D4 London-dispersion model for periodic systems},
+  year      = {2020},
+  number    = {16},
+  pages     = {8499--8512},
+  volume    = {22},
+  doi       = {10.1039/d0cp00502a},
+  publisher = {Royal Society of Chemistry ({RSC})},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
