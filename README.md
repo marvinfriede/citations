@@ -7,5 +7,6 @@ Contains frequently used citations for
 - methods
 - benchmark sets
 - programs
+- books
 
 No warranty for correctness.
