@@ -1,14 +1,14 @@
 #!/bin/bash
 
-sed -i -e "s/{jan}/{1}/" *.bib
-sed -i -e "s/{feb}/{2}/" *.bib
-sed -i -e "s/{mar}/{3}/" *.bib
-sed -i -e "s/{apr}/{4}/" *.bib
-sed -i -e "s/{may}/{5}/" *.bib
-sed -i -e "s/{jun}/{6}/" *.bib
-sed -i -e "s/{jul}/{7}/" *.bib
-sed -i -e "s/{aug}/{8}/" *.bib
-sed -i -e "s/{sep}/{9}/" *.bib
-sed -i -e "s/{oct}/{10}/" *.bib
-sed -i -e "s/{nov}/{11}/" *.bib
-sed -i -e "s/{dez}/{12}/" *.bib
+sed -i -e "s/{[Jj]an}/{1}/" *.bib
+sed -i -e "s/{[Ff]eb}/{2}/" *.bib
+sed -i -e "s/{[Mm]ar}/{3}/" *.bib
+sed -i -e "s/{[Aa]pr}/{4}/" *.bib
+sed -i -e "s/{[Mm]ay}/{5}/" *.bib
+sed -i -e "s/{[Jj]un}/{6}/" *.bib
+sed -i -e "s/{[Jj]ul}/{7}/" *.bib
+sed -i -e "s/{[Aa]ug}/{8}/" *.bib
+sed -i -e "s/{[Ss]ep}/{9}/" *.bib
+sed -i -e "s/{[Oo]ct}/{10}/" *.bib
+sed -i -e "s/{[Nn]ov}/{11}/" *.bib
+sed -i -e "s/{[Dd]ez}/{12}/" *.bib
