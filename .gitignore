@@ -1,1 +1,4 @@
-*.bak
+**/*.bak
+**/*.tmp
+tlpkg
+web2c
