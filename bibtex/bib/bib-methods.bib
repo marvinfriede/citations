@@ -1,4 +1,22 @@
 %-----------------------------------------------------------------------------
+%   FUNDAMENTAL
+%-----------------------------------------------------------------------------
+
+@article{ks-dft,
+  author    = {W. Kohn and L. J. Sham},
+  journal   = {Phys. Rev.},
+  title     = {Self-Consistent Equations Including Exchange and Correlation Effects},
+  year      = {1965},
+  month     = {nov},
+  number    = {4A},
+  pages     = {A1133--A1138},
+  volume    = {140},
+  doi       = {10.1103/physrev.140.a1133},
+  publisher = {American Physical Society ({APS})}
+}
+
+
+%-----------------------------------------------------------------------------
 %   COUNTERPOISE CORRECTION
 %-----------------------------------------------------------------------------
 
@@ -142,7 +160,7 @@
 
 @article{dft-sapt1,
   author    = {Georg Jansen and Andreas Hesselmann},
-  journal   = {J. Phys. Chem. A},
+  journal   = {Journal of Physical Chemistry A},
   title     = {Comment on {\textquotedblleft}Using Kohn-Sham Orbitals in Symmetry-Adapted Perturbation Theory To Investigate Intermolecular Interactions{\textquotedblright}},
   year      = {2001},
   month     = {11},
@@ -155,7 +173,7 @@
 
 @article{dft-sapt2,
   author    = {Andreas He{\ss}elmann and Georg Jansen},
-  journal   = {Chem. Phys. Lett.},
+  journal   = {Chemical Physics Letters},
   title     = {First-order intermolecular interaction energies from Kohn{\textendash}Sham orbitals},
   year      = {2002},
   month     = {5},
@@ -334,7 +352,7 @@
 
 @article{anderson-2,
   author    = {D. R. Hamann},
-  journal   = {Phys. Rev. Lett.},
+  journal   = {Physical Review Letters},
   title     = {Semiconductor Charge Densities with Hard-Core and Soft-Core Pseudopotentials},
   year      = {1979},
   month     = {3},
@@ -474,6 +492,97 @@
   volume    = {128},
   doi       = {10.1063/1.2841077},
   publisher = {American Institute of Physics},
+
+
+%-----------------------------------------------------------------------------
+%   OPTIMIZATION
+%-----------------------------------------------------------------------------
+
+@article{levenberg-marquardt-1,
+  author    = {Kenneth Levenberg},
+  journal   = {Q. Appl. Math.},
+  title     = {A method for the solution of certain non-linear problems in least squares},
+  year      = {1944},
+  number    = {2},
+  pages     = {164--168},
+  volume    = {2},
+  doi       = {10.1090/qam/10666},
+  publisher = {American Mathematical Society ({AMS})}
+}
+
+@article{levenberg-marquardt-2,
+  author    = {Donald W. Marquardt},
+  journal   = {Journal of the Society for Industrial and Applied Mathematics},
+  title     = {An Algorithm for Least-Squares Estimation of Nonlinear Parameters},
+  year      = {1963},
+  month     = {jun},
+  number    = {2},
+  pages     = {431--441},
+  volume    = {11},
+  doi       = {10.1137/0111030},
+  publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})}
+}
+
+@electronic{nlopt,
+  address = {http://github.com/stevengj/nlopt},
+  author  = {Steven G. Johnson},
+  title   = {The NLopt nonlinear-optimization package},
+  url     = {http://github.com/stevengj/nlopt},
+  year    = {2022}
+}
+
+@article{lbfgs-1,
+  author    = {Jorge Nocedal},
+  journal   = {Math. Comput.},
+  title     = {Updating quasi-Newton matrices with limited storage},
+  year      = {1980},
+  number    = {151},
+  pages     = {773--782},
+  volume    = {35},
+  doi       = {10.1090/s0025-5718-1980-0572855-7},
+  publisher = {American Mathematical Society ({AMS})}
+}
+
+@article{lbfgs-2,
+  author    = {Dong C. Liu and Jorge Nocedal},
+  journal   = {Math. Programming},
+  title     = {On the limited memory {BFGS} method for large scale optimization},
+  year      = {1989},
+  month     = {aug},
+  number    = {1-3},
+  pages     = {503--528},
+  volume    = {45},
+  doi       = {10.1007/bf01589116},
+  publisher = {Springer Science and Business Media {LLC}}
+}
+
+@article{minpack,
+  title        = {User guide for MINPACK-1},
+  author       = {More, J. J. and Garbow, B. S. and Hillstrom, K. E.},
+  abstractnote = {MINPACK-1 is a pack of FORTRAN subprograms for the numerical solution of nonlinear equations and nonlinear least-squares problems. This report provides an overview of the algorithms and software in the package, and includes the documentation and program listings.},
+  doi          = {10.2172/6997568},
+  url          = {https://www.osti.gov/biblio/6997568},
+  place        = {United States},
+  year         = {1980},
+  month        = {8}
+}
+
+
+%-----------------------------------------------------------------------------
+%   EXCITED STATES
+%-----------------------------------------------------------------------------
+
+@article{optimal-tuning,
+  author    = {Roi Baer and Ester Livshits and Ulrike Salzner},
+  journal   = {Annual Review of Physical Chemistry},
+  title     = {Tuned Range-Separated Hybrids in Density Functional Theory},
+  year      = {2010},
+  month     = {mar},
+  number    = {1},
+  pages     = {85--109},
+  volume    = {61},
+  doi       = {10.1146/annurev.physchem.012809.103321},
+  publisher = {Annual Reviews}
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

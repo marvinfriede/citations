@@ -1,2 +1,4 @@
-*.bak
-*.sav.tmp
+**/*.bak
+**/*.tmp
+tlpkg
+web2c
