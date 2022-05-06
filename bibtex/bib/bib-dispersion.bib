@@ -1,0 +1,199 @@
+%-----------------------------------------------------------------------------
+%   DISPERSION CORRECTION
+%-----------------------------------------------------------------------------
+
+% DFT-D3
+@article{dftd3,
+  author     = {Grimme, Stefan and Antony, Jens and Ehrlich, Stephan and Krieg, Helge},
+  journal    = {Journal of Chemical Physics},
+  title      = {A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu},
+  year       = {2010},
+  number     = {15},
+  pages      = {154104},
+  volume     = {132},
+  abstract   = {The method of dispersion correction as an add-on to standard Kohn-Sham density functional theory (DFT-D) has been refined regarding higher accuracy, broader range of applicability, and less empiricism. The main new ingredients are atom-pairwise specific dispersion coefficients and cutoff radii that are both computed from first principles. The coefficients for new eighth-order dispersion terms are computed using established recursion relations. System (geometry) dependent information is used for the first time in a DFT-D type approach by employing the new concept of fractional coordination numbers (CN). They are used to interpolate between dispersion coefficients of atoms in different chemical environments. The method only requires adjustment of two global parameters for each density functional, is asymptotically exact for a gas of weakly interacting neutral atoms, and easily allows the computation of atomic forces. Three-body nonadditivity terms are considered. The method has been assessed on standard benchmark sets for inter- and intramolecular noncovalent interactions with a particular emphasis on a consistent description of light and heavy element systems. The mean absolute deviations for the S22 benchmark set of noncovalent interactions for 11 standard density functionals decrease by 15{\%}-40{\%} compared to the previous (already accurate) DFT-D version. Spectacular improvements are found for a tripeptide-folding model and all tested metallic systems. The rectification of the long-range behavior and the use of more accurate C(6) coefficients also lead to a much better description of large (infinite) systems as shown for graphene sheets and the adsorption of benzene on an Ag(111) surface. For graphene it is found that the inclusion of three-body terms substantially (by about 10{\%}) weakens the interlayer binding. We propose the revised DFT-D method as a general tool for the computation of the dispersion energy in molecules and solids of any kind with DFT and related (low-cost) electronic structure methods for large systems.},
+  doi        = {10.1063/1.3382344},
+  file       = {http://www.ncbi.nlm.nih.gov/pubmed/20423165},
+  pagination = {page}
+}
+
+% cite together with dftd3
+@article{dftd3-bj,
+  author     = {Grimme, Stefan and Ehrlich, Stephan and Goerigk, Lars},
+  journal    = {Journal of Computational Chemistry},
+  title      = {Effect of the damping function in dispersion corrected density functional theory},
+  year       = {2011},
+  number     = {7},
+  pages      = {1456--1465},
+  volume     = {32},
+  doi        = {10.1002/jcc.21759},
+  pagination = {page}
+}
+
+% DFT-D4
+@article{dftd4-1,
+  author    = {Eike Caldeweyher and Christoph Bannwarth and Stefan Grimme},
+  journal   = {Journal of Chemical Physics},
+  title     = {Extension of the D3 dispersion coefficient model},
+  year      = {2017},
+  month     = {jul},
+  number    = {3},
+  pages     = {034112},
+  volume    = {147},
+  doi       = {10.1063/1.4993215},
+  publisher = {{AIP} Publishing}
+}
+
+@article{dftd4-2,
+  author    = {Eike Caldeweyher and Sebastian Ehlert and Andreas Hansen and Hagen Neugebauer and Sebastian Spicher and Christoph Bannwarth and Stefan Grimme},
+  journal   = {Journal of Chemical Physics},
+  title     = {A generally applicable atomic-charge dependent London dispersion correction},
+  year      = {2019},
+  month     = {apr},
+  number    = {15},
+  pages     = {154122},
+  volume    = {150},
+  doi       = {10.1063/1.5090222},
+  publisher = {{AIP} Publishing}
+}
+
+@article{dftd4-periodic,
+  author    = {Eike Caldeweyher and Jan-Michael Mewes and Sebastian Ehlert and Stefan Grimme},
+  journal   = {Physical Chemistry Chemical Physics},
+  title     = {Extension and evaluation of the D4 London-dispersion model for periodic systems},
+  year      = {2020},
+  number    = {16},
+  pages     = {8499--8512},
+  volume    = {22},
+  doi       = {10.1039/d0cp00502a},
+  publisher = {Royal Society of Chemistry ({RSC})}
+}
+
+%-----------------------------------------------------------------------------
+%   DISCOVERY OF MISSING DISPERSION
+%-----------------------------------------------------------------------------
+
+@article{missing-dispersion-1,
+  author    = {S{\'{a}}ndor Kristy{\'{a}}n and P{\'{e}}ter Pulay},
+  journal   = {Chemical Physics Letters},
+  title     = {Can (semi)local density functional theory account for the London dispersion forces?},
+  year      = {1994},
+  month     = {oct},
+  number    = {3},
+  pages     = {175--180},
+  volume    = {229},
+  doi       = {10.1016/0009-2614(94)01027-7},
+  publisher = {Elsevier {BV}}
+}
+
+@article{missing-dispersion-2,
+  author    = {Jos{\'{e}}M. P{\'{e}}rez-Jord{\'{a}} and A.D. Becke},
+  journal   = {Chemical Physics Letters},
+  title     = {A density-functional study of van der Waals forces: rare gas diatomics},
+  year      = {1995},
+  month     = {feb},
+  number    = {1-2},
+  pages     = {134--137},
+  volume    = {233},
+  doi       = {10.1016/0009-2614(94)01402-h},
+  publisher = {Elsevier {BV}}
+}
+
+@article{missing-dispersion-3,
+  author    = {Pavel Hobza and Ji{\v{r}}{\'{\i}} {\v{S}}poner and Tom{\'{a}}{\v{s}} Reschel},
+  journal   = {Journal of Computational Chemistry},
+  title     = {Density functional theory and molecular clusters},
+  year      = {1995},
+  month     = {nov},
+  number    = {11},
+  pages     = {1315--1325},
+  volume    = {16},
+  doi       = {10.1002/jcc.540161102},
+  publisher = {Wiley}
+}
+
+@Article{missing-dispersion-4,
+  author       = {Ji{\v{r}}{\'{\i}} {\v{S}}poner and Jerzy Leszczynski and Pavel Hobza},
+  year         = {1996},
+  journaltitle = {Journal of Computational Chemistry},
+  title        = {Base stacking in cytosine dimer. A comparison of correlatedab initio calculations with three empirical potential models and density functional theory calculations},
+  number       = {jul},
+  pages        = {841--850},
+  volume       = {17},
+  doi          = {10.1002/(sici)1096-987x(199605)17:7<841::aid-jcc8>3.0.co;2-s},
+  publisher    = {Wiley}
+}
+
+
+%-----------------------------------------------------------------------------
+%   DAMPING FUNCTIONS
+%-----------------------------------------------------------------------------
+
+@Article{rational-damping-1,
+  author    = {Axel D. Becke and Erin R. Johnson},
+  journal   = {The Journal of Chemical Physics},
+  title     = {A density-functional model of the dispersion interaction},
+  year      = {2005},
+  month     = {oct},
+  number    = {15},
+  pages     = {154101},
+  volume    = {123},
+  doi       = {10.1063/1.2065267},
+  publisher = {{AIP} Publishing},
+}
+
+@Article{rational-damping-2,
+  author    = {Erin R. Johnson and Axel D. Becke},
+  journal   = {The Journal of Chemical Physics},
+  title     = {A post-Hartree{\textendash}Fock model of intermolecular interactions},
+  year      = {2005},
+  month     = {jul},
+  number    = {2},
+  pages     = {024101},
+  volume    = {123},
+  doi       = {10.1063/1.1949201},
+  publisher = {{AIP} Publishing},
+}
+
+@Article{damping-rational-3,
+  author    = {Erin R. Johnson and Axel D. Becke},
+  journal   = {The Journal of Chemical Physics},
+  title     = {A post-Hartree-Fock model of intermolecular interactions: Inclusion of higher-order corrections},
+  year      = {2006},
+  month     = {may},
+  number    = {17},
+  pages     = {174104},
+  volume    = {124},
+  doi       = {10.1063/1.2190220},
+  publisher = {{AIP} Publishing},
+}
+
+@Article{Eisenschitz.1930,
+  author    = {R. Eisenschitz and F. London},
+  journal   = {Zeitschrift f{\"u}r Physik},
+  title     = {{\"U}ber das Verh{\"a}ltnis der van der Waalsschen Kr{\"a}fte zu den hom{\"o}opolaren Bindungskr{\"a}ften},
+  year      = {1930},
+  month     = {jul},
+  number    = {7-8},
+  pages     = {491--527},
+  volume    = {60},
+  doi       = {10.1007/bf01341258},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+%-----------------------------------------------------------------------------
+%   REVIEWS
+%-----------------------------------------------------------------------------
+
+@article{grimme-dispersion-corrected-methods,
+  author    = {Stefan Grimme and Andreas Hansen and Jan Gerit Brandenburg and Christoph Bannwarth},
+  journal   = {Chemical Reviews},
+  title     = {Dispersion-Corrected Mean-Field Electronic Structure Methods},
+  year      = {2016},
+  month     = {apr},
+  number    = {9},
+  pages     = {5105--5154},
+  volume    = {116},
+  doi       = {10.1021/acs.chemrev.5b00533},
+  publisher = {American Chemical Society ({ACS})}
+}
