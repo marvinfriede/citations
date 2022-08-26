@@ -94,4 +94,67 @@
   publisher = {ACS Publications}
 }
 
+@article{gaff,
+  title = {Development and Testing of a General Amber Force Field},
+  author = {Wang, Junmei and Wolf, Romain M. and Caldwell, James W. and Kollman, Peter A. and Case, David A.},
+  year = {2004},
+  journal = {Journal of Computational Chemistry},
+  volume = {25},
+  number = {9},
+  pages = {1157--1174},
+  issn = {1096-987X},
+  doi = {10.1002/jcc.20035},
+  abstract = {We describe here a general Amber force field (GAFF) for organic molecules. GAFF is designed to be compatible with existing Amber force fields for proteins and nucleic acids, and has parameters for most organic and pharmaceutical molecules that are composed of H, C, N, O, S, P, and halogens. It uses a simple functional form and a limited number of atom types, but incorporates both empirical and heuristic models to estimate force constants and partial atomic charges. The performance of GAFF in test cases is encouraging. In test I, 74 crystallographic structures were compared to GAFF minimized structures, with a root-mean-square displacement of 0.26 \AA, which is comparable to that of the Tripos 5.2 force field (0.25 \AA ) and better than those of MMFF 94 and CHARMm (0.47 and 0.44 \AA, respectively). In test II, gas phase minimizations were performed on 22 nucleic acid base pairs, and the minimized structures and intermolecular energies were compared to MP2/6-31G* results. The RMS of displacements and relative energies were 0.25 \AA{} and 1.2 kcal/mol, respectively. These data are comparable to results from Parm99/RESP (0.16 \AA{} and 1.18 kcal/mol, respectively), which were parameterized to these base pairs. Test III looked at the relative energies of 71 conformational pairs that were used in development of the Parm99 force field. The RMS error in relative energies (compared to experiment) is about 0.5 kcal/mol. GAFF can be applied to wide range of molecules in an automatic fashion, making it suitable for rational drug design and database searching. \textcopyright{} 2004 Wiley Periodicals, Inc. J Comput Chem 25: 1157\textendash 1174, 2004},
+  langid = {english},
+  keywords = {additive force field,force field parameterization,general AMBER force field,restrained electrostatic potential (RESP)},
+  annotation = {\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/jcc.20035},
+}
+
+@article{reaxff,
+  title = {{{ReaxFF}}:\, {{A Reactive Force Field}} for {{Hydrocarbons}}},
+  shorttitle = {{{ReaxFF}}},
+  author = {{van Duin}, Adri C. T. and Dasgupta, Siddharth and Lorant, Francois and Goddard, William A.},
+  year = {2001},
+  month = oct,
+  journal = {The Journal of Physical Chemistry A},
+  volume = {105},
+  number = {41},
+  pages = {9396--9409},
+  publisher = {{American Chemical Society}},
+  issn = {1089-5639},
+  doi = {10.1021/jp004368u},
+  abstract = {To make practical the molecular dynamics simulation of large scale reactive chemical systems (1000s of atoms), we developed ReaxFF, a force field for reactive systems. ReaxFF uses a general relationship between bond distance and bond order on one hand and between bond order and bond energy on the other hand that leads to proper dissociation of bonds to separated atoms. Other valence terms present in the force field (angle and torsion) are defined in terms of the same bond orders so that all these terms go to zero smoothly as bonds break. In addition, ReaxFF has Coulomb and Morse (van der Waals) potentials to describe nonbond interactions between all atoms (no exclusions). These nonbond interactions are shielded at short range so that the Coulomb and van der Waals interactions become constant as Rij \textrightarrow{} 0. We report here the ReaxFF for hydrocarbons. The parameters were derived from quantum chemical calculations on bond dissociation and reactions of small molecules plus heat of formation and geometry data for a number of stable hydrocarbon compounds. We find that the ReaxFF provides a good description of these data. Generally, the results are of an accuracy similar or better than PM3, while ReaxFF is about 100 times faster. In turn, the PM3 is about 100 times faster than the QC calculations. Thus, with ReaxFF we hope to be able to study complex reactions in hydrocarbons.},
+  file = {/home/friede/Zotero/storage/6KHJDGEG/van Duin et al. - 2001 - ReaxFF  A Reactive Force Field for Hydrocarbons.pdf;/home/friede/Zotero/storage/YIUYCIZN/jp004368u.html}
+}
+
+@article{uff,
+  title = {{{UFF}}, a Full Periodic Table Force Field for Molecular Mechanics and Molecular Dynamics Simulations},
+  author = {Rappe, A. K. and Casewit, C. J. and Colwell, K. S. and Goddard, W. A. and Skiff, W. M.},
+  year = {1992},
+  month = dec,
+  journal = {Journal of the American Chemical Society},
+  volume = {114},
+  number = {25},
+  pages = {10024--10035},
+  publisher = {{American Chemical Society}},
+  issn = {0002-7863},
+  doi = {10.1021/ja00051a040},
+}
+
+@article{gfnff,
+  title = {Robust {{Atomistic Modeling}} of {{Materials}}, {{Organometallic}}, and {{Biochemical Systems}}},
+  author = {Spicher, Sebastian and Grimme, Stefan},
+  year = {2020},
+  journal = {Angewandte Chemie International Edition},
+  volume = {59},
+  number = {36},
+  pages = {15665--15673},
+  issn = {1521-3773},
+  doi = {10.1002/anie.202004239},
+  abstract = {Modern chemistry seems to be unlimited in molecular size and elemental composition. Metal-organic frameworks or biological macromolecules involve complex architectures and a large variety of elements. Yet, a general and broadly applicable theoretical method to describe the structures and interactions of molecules beyond the 1000-atom size regime semi-quantitatively is not self-evident. For this purpose, a generic force field named GFN-FF is presented, which is completely newly developed to enable fast structure optimizations and molecular-dynamics simulations for basically any chemical structure consisting of elements up to radon. The freely available computer program requires only starting coordinates and elemental composition as input from which, fully automatically, all potential-energy terms are constructed. GFN-FF outperforms other force fields in terms of generality and accuracy, approaching the performance of much more elaborate quantum-mechanical methods in many cases.},
+  langid = {english},
+  keywords = {computational chemistry,dynamics,force-field,molecular modeling,molecular structures},
+  annotation = {\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/anie.202004239},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
