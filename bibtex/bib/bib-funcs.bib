@@ -181,7 +181,7 @@
 }
 
 % SCAN
-@article{scan1,
+@article{scan,
   author    = {Jianwei Sun and Adrienn Ruzsinszky and John{\hspace{0.167em}}P. Perdew},
   journal   = {Physical Review Lett.},
   title     = {Strongly Constrained and Appropriately Normed Semilocal Density Functional},
@@ -193,8 +193,7 @@
   doi       = {10.1103/physrevlett.115.036402},
   publisher = {American Physical Society ({APS})}
 }
-
-@article{scan2,
+@article{scan-d,
   author    = {J. G. Brandenburg and J. E. Bates and J. Sun and J. P. Perdew},
   journal   = {Physical Review B},
   title     = {Benchmark tests of a strongly constrained semilocal functional with a long-range dispersion correction},
@@ -205,6 +204,33 @@
   volume    = {94},
   doi       = {10.1103/physrevb.94.115144},
   publisher = {American Physical Society ({APS})}
+}
+
+% r2SCAN
+@article{r2scan,
+  author  = {Furness, James W. and Kaplan, Aaron D. and Ning, Jinliang and Perdew, John P. and Sun, Jianwei},
+  title   = {Accurate and Numerically Efficient r2SCAN Meta-Generalized Gradient Approximation},
+  journal = {The Journal of Physical Chemistry Letters},
+  volume  = {11},
+  number  = {19},
+  pages   = {8208-8215},
+  year    = {2020},
+  doi     = {10.1021/acs.jpclett.0c02405},
+  note    = {PMID: 32876454},
+  url     = {https://doi.org/10.1021/acs.jpclett.0c02405},
+  eprint  = {https://doi.org/10.1021/acs.jpclett.0c02405}
+}
+@article{r2scan-d4,
+  author  = {Ehlert,Sebastian and Huniar,Uwe and Ning,Jinliang and Furness,James W. and Sun,Jianwei and Kaplan,Aaron D. and Perdew,John P. and Brandenburg,Jan Gerit},
+  title   = {r2SCAN-D4: Dispersion corrected meta-generalized gradient approximation for general chemical applications},
+  journal = {The Journal of Chemical Physics},
+  volume  = {154},
+  number  = {6},
+  pages   = {061101},
+  year    = {2021},
+  doi     = {10.1063/5.0041008},
+  url     = {https://doi.org/10.1063/5.0041008},
+  eprint  = {https://doi.org/10.1063/5.0041008}
 }
 
 % B97M-V
@@ -232,6 +258,20 @@
   volume    = {125},
   doi       = {10.1063/1.2370993},
   publisher = {{AIP} Publishing}
+}
+
+@article{dm21,
+  author   = {James Kirkpatrick  and Brendan McMorrow  and David H. P. Turban  and Alexander L. Gaunt  and James S. Spencer  and Alexander G. D. G. Matthews  and Annette Obika  and Louis Thiry  and Meire Fortunato  and David Pfau  and Lara Román Castellanos  and Stig Petersen  and Alexander W. R. Nelson  and Pushmeet Kohli  and Paula Mori-Sánchez  and Demis Hassabis  and Aron J. Cohen },
+  title    = {Pushing the frontiers of density functionals by solving the fractional electron problem},
+  journal  = {Science},
+  volume   = {374},
+  number   = {6573},
+  pages    = {1385-1389},
+  year     = {2021},
+  doi      = {10.1126/science.abj6511},
+  url      = {https://www.science.org/doi/abs/10.1126/science.abj6511},
+  eprint   = {https://www.science.org/doi/pdf/10.1126/science.abj6511},
+  abstract = {In the past 30 years, density functional theory (DFT) has emerged as the most widely used electronic structure method to predict the properties of various systems in chemistry, biology, and materials science. Despite a long history of successes, state-of-the-art DFT functionals have crucial limitations. In particular, significant systematic errors are observed for charge densities involving mobile charges and spins. Kirkpatrick et al. developed a framework to train a deep neural network on accurate chemical data and fractional electron constraints (see the Perspective by Perdew). The resulting functional outperforms traditional functionals on thorough benchmarks for main-group atoms and molecules. The present work offers a solution to a long-standing critical problem in DFT and demonstrates the success of combining DFT with the modern machine-learning methodology. —YS Deep learning solves a long-standing critical limitation of density functional theory in describing fractional charges and spins. Density functional theory describes matter at the quantum level, but all popular approximations suffer from systematic errors that arise from the violation of mathematical properties of the exact functional. We overcame this fundamental limitation by training a neural network on molecular data and on fictitious systems with fractional charge and spin. The resulting functional, DM21 (DeepMind 21), correctly describes typical examples of artificial charge delocalization and strong correlation and performs better than traditional functionals on thorough benchmarks for main-group atoms and molecules. DM21 accurately models complex systems such as hydrogen chains, charged DNA base pairs, and diradical transition states. More crucially for the field, because our methodology relies on data and constraints, which are continually improving, it represents a viable pathway toward the exact universal functional.}
 }
 
 
@@ -297,7 +337,7 @@
   number   = {25},
   pages    = {5656-5667},
   volume   = {109},
-  abstract = {This paper develops two new hybrid meta exchange-correlation functionals for thermochemistry, thermochemical kinetics, and nonbonded interactions. The new functionals are called PW6B95 (6-parameter functional based on Perdew−Wang-91 exchange and Becke-95 correlation) and PWB6K (6-parameter functional for kinetics based on Perdew−Wang-91 exchange and Becke-95 correlation). The resulting methods were comparatively assessed against the MGAE109/3 main group atomization energy database, against the IP13/3 ionization potential database, against the EA13/3 electron affinity database, against the HTBH38/4 and NHTBH38/04 hydrogen-transfer and non-hydrogen-transfer barrier height databases, against the HB6/04 hydrogen bonding database, against the CT7/04 charge-transfer complex database, against the DI6/04 dipole interaction database, against the WI7/05 weak interaction database, and against the new PPS5/05 π−π stacking interaction database. From the assessment and comparison of methods, we draw the following conclusions, based on an analysis of mean unsigned errors:  (i) The PW6B95, MPW1B95, B98, B97-1, and TPSS1KCIS methods give the best results for a combination of thermochemistry and nonbonded interactions. (ii) PWB6K, MPWB1K, BB1K, MPW1K, and MPW1B95 give the best results for a combination of thermochemical kinetics and nonbonded interactions. (iii) PWB6K outperforms the MP2 method for nonbonded interactions. (iv) PW6B95 gives errors for main group covalent bond energies that are only 0.41 kcal (as measured by mean unsigned error per bond (MUEPB) for the MGAE109 database), as compared to 0.56 kcal/mol for the second best method and 0.92 kcal/mol for B3LYP.},
+  abstract = {This paper develops two new hybrid meta exchange-correlation functionals for thermochemistry, thermochemical kinetics, and nonbonded interactions. The new functionals are called PW6B95 (6-parameter functional based on Perdew-Wang-91 exchange and Becke-95 correlation) and PWB6K (6-parameter functional for kinetics based on Perdew-Wang-91 exchange and Becke-95 correlation). The resulting methods were comparatively assessed against the MGAE109/3 main group atomization energy database, against the IP13/3 ionization potential database, against the EA13/3 electron affinity database, against the HTBH38/4 and NHTBH38/04 hydrogen-transfer and non-hydrogen-transfer barrier height databases, against the HB6/04 hydrogen bonding database, against the CT7/04 charge-transfer complex database, against the DI6/04 dipole interaction database, against the WI7/05 weak interaction database, and against the new PPS5/05 π−π stacking interaction database. From the assessment and comparison of methods, we draw the following conclusions, based on an analysis of mean unsigned errors: (i) The PW6B95, MPW1B95, B98, B97-1, and TPSS1KCIS methods give the best results for a combination of thermochemistry and nonbonded interactions. (ii) PWB6K, MPWB1K, BB1K, MPW1K, and MPW1B95 give the best results for a combination of thermochemical kinetics and nonbonded interactions. (iii) PWB6K outperforms the MP2 method for nonbonded interactions. (iv) PW6B95 gives errors for main group covalent bond energies that are only 0.41 kcal (as measured by mean unsigned error per bond (MUEPB) for the MGAE109 database), as compared to 0.56 kcal/mol for the second best method and 0.92 kcal/mol for B3LYP.},
   doi      = {10.1021/jp050536c},
   eprint   = {https://doi.org/10.1021/jp050536c},
   url      = {https://doi.org/10.1021/jp050536c}
