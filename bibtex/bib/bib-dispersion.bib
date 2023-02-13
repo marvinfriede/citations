@@ -2,6 +2,22 @@
 %   DISPERSION CORRECTION
 %-----------------------------------------------------------------------------
 
+% DFT-D2
+@article{dft-d2,
+  author   = {Grimme, Stefan},
+  title    = {Semiempirical GGA-type density functional constructed with a long-range dispersion correction},
+  journal  = {Journal of Computational Chemistry},
+  volume   = {27},
+  number   = {15},
+  pages    = {1787-1799},
+  keywords = {density functional theory, generalized gradient approximation, van der Waals interactions, thermochemistry},
+  doi      = {https://doi.org/10.1002/jcc.20495},
+  url      = {https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.20495},
+  eprint   = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/jcc.20495},
+  abstract = {Abstract A new density functional (DF) of the generalized gradient approximation (GGA) type for general chemistry applications termed B97-D is proposed. It is based on Becke's power-series ansatz from 1997 and is explicitly parameterized by including damped atom-pairwise dispersion corrections of the form C6 · R−6. A general computational scheme for the parameters used in this correction has been established and parameters for elements up to xenon and a scaling factor for the dispersion part for several common density functionals (BLYP, PBE, TPSS, B3LYP) are reported. The new functional is tested in comparison with other GGAs and the B3LYP hybrid functional on standard thermochemical benchmark sets, for 40 noncovalently bound complexes, including large stacked aromatic molecules and group II element clusters, and for the computation of molecular geometries. Further cross-validation tests were performed for organometallic reactions and other difficult problems for standard functionals. In summary, it is found that B97-D belongs to one of the most accurate general purpose GGAs, reaching, for example for the G97/2 set of heat of formations, a mean absolute deviation of only 3.8 kcal mol−1. The performance for noncovalently bound systems including many pure van der Waals complexes is exceptionally good, reaching on the average CCSD(T) accuracy. The basic strategy in the development to restrict the density functional description to shorter electron correlation lengths scales and to describe situations with medium to large interatomic distances by damped C6 · R−6 terms seems to be very successful, as demonstrated for some notoriously difficult reactions. As an example, for the isomerization of larger branched to linear alkanes, B97-D is the only DF available that yields the right sign for the energy difference. From a practical point of view, the new functional seems to be quite robust and it is thus suggested as an efficient and accurate quantum chemical method for large systems where dispersion forces are of general importance. © 2006 Wiley Periodicals, Inc. J Comput Chem 2006},
+  year     = {2006}
+}
+
 % DFT-D3
 @article{dftd3,
   author     = {Grimme, Stefan and Antony, Jens and Ehrlich, Stephan and Krieg, Helge},
@@ -112,7 +128,7 @@
   publisher = {Wiley}
 }
 
-@Article{missing-dispersion-4,
+@article{missing-dispersion-4,
   author       = {Ji{\v{r}}{\'{\i}} {\v{S}}poner and Jerzy Leszczynski and Pavel Hobza},
   year         = {1996},
   journaltitle = {Journal of Computational Chemistry},
@@ -129,7 +145,7 @@
 %   DAMPING FUNCTIONS
 %-----------------------------------------------------------------------------
 
-@Article{rational-damping-1,
+@article{rational-damping-1,
   author    = {Axel D. Becke and Erin R. Johnson},
   journal   = {The Journal of Chemical Physics},
   title     = {A density-functional model of the dispersion interaction},
@@ -139,10 +155,10 @@
   pages     = {154101},
   volume    = {123},
   doi       = {10.1063/1.2065267},
-  publisher = {{AIP} Publishing},
+  publisher = {{AIP} Publishing}
 }
 
-@Article{rational-damping-2,
+@article{rational-damping-2,
   author    = {Erin R. Johnson and Axel D. Becke},
   journal   = {The Journal of Chemical Physics},
   title     = {A post-Hartree{\textendash}Fock model of intermolecular interactions},
@@ -152,10 +168,10 @@
   pages     = {024101},
   volume    = {123},
   doi       = {10.1063/1.1949201},
-  publisher = {{AIP} Publishing},
+  publisher = {{AIP} Publishing}
 }
 
-@Article{rational-damping-3,
+@article{rational-damping-3,
   author    = {Erin R. Johnson and Axel D. Becke},
   journal   = {The Journal of Chemical Physics},
   title     = {A post-Hartree-Fock model of intermolecular interactions: Inclusion of higher-order corrections},
@@ -165,10 +181,10 @@
   pages     = {174104},
   volume    = {124},
   doi       = {10.1063/1.2190220},
-  publisher = {{AIP} Publishing},
+  publisher = {{AIP} Publishing}
 }
 
-@Article{Eisenschitz.1930,
+@article{Eisenschitz.1930,
   author    = {R. Eisenschitz and F. London},
   journal   = {Zeitschrift f{\"u}r Physik},
   title     = {{\"U}ber das Verh{\"a}ltnis der van der Waalsschen Kr{\"a}fte zu den hom{\"o}opolaren Bindungskr{\"a}ften},
@@ -178,22 +194,6 @@
   pages     = {491--527},
   volume    = {60},
   doi       = {10.1007/bf01341258},
-  publisher = {Springer Science and Business Media {LLC}},
+  publisher = {Springer Science and Business Media {LLC}}
 }
 
-%-----------------------------------------------------------------------------
-%   REVIEWS
-%-----------------------------------------------------------------------------
-
-@article{grimme-dispersion-corrected-methods,
-  author    = {Stefan Grimme and Andreas Hansen and Jan Gerit Brandenburg and Christoph Bannwarth},
-  journal   = {Chemical Reviews},
-  title     = {Dispersion-Corrected Mean-Field Electronic Structure Methods},
-  year      = {2016},
-  month     = {apr},
-  number    = {9},
-  pages     = {5105--5154},
-  volume    = {116},
-  doi       = {10.1021/acs.chemrev.5b00533},
-  publisher = {American Chemical Society ({ACS})}
-}
