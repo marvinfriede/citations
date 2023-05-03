@@ -37,8 +37,9 @@ sed -i -e 's/Advances in Physics X/Adv. Phys. X/I' **/*.bib
 sed -i -e 's/Advances in Polymer Science/Adv. Polym. Sci./I' **/*.bib
 sed -i -e 's/Advances in Science and Technology/Adv. Sci. Technol./I' **/*.bib
 sed -i -e 's/AIChE Journal/AIChE J./I' **/*.bib
-sed -i -e 's/Angewandte Chemie/Angew. Chem./I' **/*.bib
+# 
 sed -i -e 's/Angewandte Chemie International Edition/Angew. Chem., Int. Ed./I' **/*.bib
+sed -i -e 's/Angewandte Chemie/Angew. Chem./I' **/*.bib
 sed -i -e 's/Annual Review of Materials Research/Annu. Rev. Mater. Res./I' **/*.bib
 sed -i -e 's/Annual Review of Physical Chemistry/Annu. Rev. Phys. Chem./I' **/*.bib
 sed -i -e 's/Applied Materials and Interfaces/Appl. Mater. Interfaces/I' **/*.bib
@@ -48,7 +49,7 @@ sed -i -e 's/Applied Materials and Interfaces/Appl. Mater. Interfaces/I' **/*.bi
 # C
 sed -i -e 's/Canadian Journal of Physics/Can. J. Phys./I' **/*.bib
 sed -i -e 's/Catalysis Today/Catal./I' **/*.bib
-sed -i -e 's/Chemical Physics/Chem. Phys./I' **/*.bib
+sed -i -e 's/{Chemical Physics}/{Chem. Phys.}/I' **/*.bib # chemical physics can appear in paper title
 sed -i -e 's/Chemical Physics Letters/Chem. Phys. Lett./I' **/*.bib
 sed -i -e 's/Chemical Reviews/Chem. Rev./I' **/*.bib
 sed -i -e 's/Chemical Science/Chem. Sci./I' **/*.bib
@@ -86,6 +87,7 @@ sed -i -e 's/Fluid Phase Equilibria/Fluid Phase Equil./I' **/*.bib
 sed -i -e 's/Inorganic chemistry/Inorg. Chem./I' **/*.bib
 sed -i -e 's/International Journal of Hydrogen Energy/Int. J. Hydrog. Energy/I' **/*.bib
 sed -i -e 's/International Journal of Quantum Chemistry/Int. J. Quantum Chem./I' **/*.bib
+sed -i -e 's/IMA Journal of Applied Mathematics/IMA J. Appl. Math./I' **/*.bib
 
 # J
 sed -i -e 's/Journal f{\"{u}}r die reine und angewandte Mathematik/J. f{\"{u}}r die Reine und Angew. Math./I' **/*.bib
@@ -157,6 +159,7 @@ sed -i -e 's/Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy
 sed -i -e 's/Structural Chemistry/Struct. Chem./I' **/*.bib
 
 # T
+sed -i -e 's/The Computer Journal/Comput. J./I' **/*.bib
 sed -i -e 's/Theoretical Chemistry Accounts/Theor. Chem. Acc./I' **/*.bib
 sed -i -e 's/Topics in Current Chemistry/Top. Curr. Chem./I' **/*.bib
 
@@ -174,7 +177,8 @@ sed -i -e 's/Wiley Interdisciplinary Reviews: Computational Molecular Science/WI
 # Z
 sed -i -e 's/Zeitschrift f{\"u}r anorganische und allgemeine Chemie/Z. anorg. allg. Chem./I' **/*.bib
 sed -i -e 's/Zeitschrift fur anorganische und allgemeine Chemie/Z. anorg. allg. Chem./I' **/*.bib
-sed -i -e 's/Zeitschrift f{\"{u}}r Physikalische Chemie/Z. Phys. Chem./I' **/*.bib
+sed -i -e 's/Zeitschrift f{\"{u}}r Physikalische Chemie/Z. Phys. Chem./I' **/*.bib # before Z. Phys. !!
+sed -i -e 's/Zeitschrift f{\"{u}}r Physik/Z. Phys./I' **/*.bib
 
 # Remove "The" from journal names
-sed -i -e 's/The J./J./I' **/*.bib
+sed -i -e 's/The J. /J. /I' **/*.bib
