@@ -527,7 +527,8 @@
   publisher = {{AIP} Publishing}
 }
 
-@article{lc-wpbe08-1,
+% uses ITYH model (sr-model-ityh) for short-range exchange
+@article{lc-mupbe08,
   author    = {Mary A. Rohrdanz and John M. Herbert},
   journal   = {J. Chem. Phys.},
   title     = {Simultaneous benchmarking of ground- and excited-state properties with long-range-corrected density functional theory},
@@ -540,7 +541,11 @@
   publisher = {{AIP} Publishing}
 }
 
-@article{lc-wpbe08-2,
+% This uses exchange hole model (sr-model-xc-hole) for short-range exchange,
+% which is derived from the EP (Ernzerhof & Perdew) exchange hole model.
+% In Q-Chem, LRC-wPBE and LC-wPBE(08) are identical and both use this version,
+% despite the references being different.
+@article{lc-wpbe08,
   author    = {Elon Weintraub and Thomas M. Henderson and Gustavo E. Scuseria},
   journal   = {J. Chem. Theory Comput.},
   title     = {Long-Range-Corrected Hybrids Based on a New Model Exchange Hole},
