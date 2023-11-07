@@ -78,6 +78,7 @@ sed -i -e 's/Electrochimica Acta/Electrochim. Acta/I' **/*.bib
 # F
 sed -i -e 's/Faraday Discussions/Faraday Discuss./I' **/*.bib
 sed -i -e 's/Fluid Phase Equilibria/Fluid Phase Equil./I' **/*.bib
+sed -i -e 's/Future Generation Computer Systems/Future Gener. Comput. Syst./I' **/*.bib
 
 # G
 
@@ -99,8 +100,10 @@ sed -i -e 's/Journal of Chemical Physics/J. Chem. Phys./I' **/*.bib
 sed -i -e 's/Journal of Chemical Theory and Computation/J. Chem. Theory Comput./I' **/*.bib
 sed -i -e 's/Journal of Computational Chemistry/J. Comput. Chem./I' **/*.bib
 sed -i -e 's/Journal of Computational Physics/J. Comput. Phys./I' **/*.bib
+sed -i -e 's/Journal of Computational and Applied Mathematics/J. Comput. Appl. Math./I' **/*.bib
 sed -i -e 's/Journal of Industrial and Engineering Chemistry/J. Ind. Eng. Chem./I' **/*.bib
 sed -i -e 's/Journal of Industrial \& Engineering Chemistry/J. Ind. Eng. Chem./I' **/*.bib
+sed -i -e 's/Journal of Machine Learning Research/J. Mach. Learn. Res./I' **/*.bib
 sed -i -e 's/Journal of Materials Chemistry/J. Mater. Chem./I' **/*.bib
 sed -i -e 's/Journal of Molecular Graphics/J. Mol. Graph./I' **/*.bib
 sed -i -e 's/Journal of Molecular Liquids/J. Mol. Liq./I' **/*.bib
@@ -119,6 +122,7 @@ sed -i -e 's/Journal of the ACM/J. ACM/I' **/*.bib
 sed -i -e 's/Journal of the American Chemical Society/J. Am. Chem. Soc./I' **/*.bib
 sed -i -e 's/Journal of the American Society for Mass Spectrometry/	J. Am. Soc. Mass Spectrom./I' **/*.bib
 sed -i -e 's/Journal of the Society for Industrial and Applied Mathematics/J. Soc. Ind. Appl. Math./I' **/*.bib
+
 
 # K
 
@@ -170,6 +174,7 @@ sed -i -e 's/Topics in Current Chemistry/Top. Curr. Chem./I' **/*.bib
 sed -i -e 's/Vibrational Spectroscopy/Vib. Spectrosc./I' **/*.bib
 # W
 sed -i -e 's/Wiley Interdisciplinary Reviews: Computational Molecular Science/WIREs Comput. Mol. Sci./I' **/*.bib
+sed -i -e 's/WIREs Computational Molecular Science/WIREs Comput. Mol. Sci./I' **/*.bib
 
 # X
 
