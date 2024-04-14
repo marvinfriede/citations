@@ -17,6 +17,7 @@ sed -i -e 's/ß/{\\"{s}}/I' **/*.bib
 
 # A
 sed -i -e 's/Accounts of Chemical Research/Acc. Chem. Res./I' **/*.bib
+sed -i -e 's/ACM Transactions on Mathematical Software/ACM Trans. Math. Softw./I' **/*.bib
 sed -i -e 's/ACS Applied Materials \& Interfaces/ACS Appl. Mater. Interfaces/I' **/*.bib
 sed -i -e 's/ACS Sustainable Chemistry and Engineering/ACS Sustain. Chem. Eng./I' **/*.bib
 sed -i -e 's/ACS Sustainable Chemistry \& Engineering/ACS Sustain. Chem. Eng./I' **/*.bib
@@ -119,6 +120,7 @@ sed -i -e 's/Journal of Power Sources/J. Power Sources/I' **/*.bib
 sed -i -e 's/Journal of Solution Chemistry/J. Sol. Chem./I' **/*.bib
 sed -i -e 's/Journal of the Physical Society of Japan/J. Phys. Soc. Jpn./I' **/*.bib
 sed -i -e 's/Journal of the ACM/J. ACM/I' **/*.bib
+sed -i -e 's/Journal of the Association for Computing Machinery/J. ACM/I' **/*.bib
 sed -i -e 's/Journal of the American Chemical Society/J. Am. Chem. Soc./I' **/*.bib
 sed -i -e 's/Journal of the American Society for Mass Spectrometry/	J. Am. Soc. Mass Spectrom./I' **/*.bib
 sed -i -e 's/Journal of the Society for Industrial and Applied Mathematics/J. Soc. Ind. Appl. Math./I' **/*.bib
