@@ -61,6 +61,7 @@ sed -i -e 's/Chemistry -- A European Journal/Chem. - Eur. J./I' **/*.bib
 sed -i -e 's/Chemistry-A European Journal/Chem. - Eur. J./I' **/*.bib
 sed -i -e 's/Chemistry--A European Journal/Chem. - Eur. J./I' **/*.bib
 sed -i -e 's/Chemistry of Materials/Chem. Mater./I' **/*.bib
+sed -i -e 's/Computational and Structural Biotechnology Journal/Comput. Struct. Biotechnol. J./I' **/*.bib
 sed -i -e 's/Computational and Theoretical Chemistry/Comput. Theor. Chem./I' **/*.bib
 sed -i -e 's/Computational Materials Science/Comput. Mater. Sci./I' **/*.bib
 sed -i -e 's/Computer Physics Communications/Comp. Phys. Comm./I' **/*.bib
@@ -82,6 +83,7 @@ sed -i -e 's/Fluid Phase Equilibria/Fluid Phase Equil./I' **/*.bib
 sed -i -e 's/Future Generation Computer Systems/Future Gener. Comput. Syst./I' **/*.bib
 
 # G
+sed -i -e 's/Geophysical Journal International/	Geophys. J. Int./I' **/*.bib
 
 # H
 
@@ -159,6 +161,7 @@ sed -i -e 's/Quarterly of Applied Mathematics/Q. Appl. Math./I' **/*.bib
 
 # R
 sed -i -e 's/RSC Advances/RSC Adv./I' **/*.bib
+sed -i -e 's/Reviews of modern physics/Rev. Mod. Phys./I' **/*.bib
 
 # S
 sed -i -e 's/Surface Science/Surf. Sci./I' **/*.bib
