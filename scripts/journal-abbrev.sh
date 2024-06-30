@@ -64,6 +64,7 @@ sed -i -e 's/Chemistry of Materials/Chem. Mater./I' **/*.bib
 sed -i -e 's/Computational and Structural Biotechnology Journal/Comput. Struct. Biotechnol. J./I' **/*.bib
 sed -i -e 's/Computational and Theoretical Chemistry/Comput. Theor. Chem./I' **/*.bib
 sed -i -e 's/Computational Materials Science/Comput. Mater. Sci./I' **/*.bib
+sed -i -e 's/Computational and Structural Biotechnology Journal/Comput. Struct. Biotechnol. J./I' **/*.bib
 sed -i -e 's/Computer Physics Communications/Comp. Phys. Comm./I' **/*.bib
 sed -i -e 's/Computing in Science \& Engineering/Comput. Sci. Eng./I' **/*.bib
 sed -i -e 's/Computing in Science \& Engineering/Comput. Sci. Eng./I' **/*.bib
@@ -83,12 +84,12 @@ sed -i -e 's/Fluid Phase Equilibria/Fluid Phase Equil./I' **/*.bib
 sed -i -e 's/Future Generation Computer Systems/Future Gener. Comput. Syst./I' **/*.bib
 
 # G
-sed -i -e 's/Geophysical Journal International/	Geophys. J. Int./I' **/*.bib
+sed -i -e 's/Geophysical Journal International/Geophys. J. Int./I' **/*.bib
 
 # H
 
 # I
-sed -i -e 's/Inorganic chemistry/Inorg. Chem./I' **/*.bib
+sed -i -e 's/Inorganic Chemistry/Inorg. Chem./I' **/*.bib
 sed -i -e 's/International Journal of Hydrogen Energy/Int. J. Hydrog. Energy/I' **/*.bib
 sed -i -e 's/International Journal of Quantum Chemistry/Int. J. Quantum Chem./I' **/*.bib
 sed -i -e 's/IMA Journal of Applied Mathematics/IMA J. Appl. Math./I' **/*.bib
@@ -103,6 +104,7 @@ sed -i -e 's/Journal of Chemical Physics/J. Chem. Phys./I' **/*.bib
 sed -i -e 's/Journal of Chemical Theory and Computation/J. Chem. Theory Comput./I' **/*.bib
 sed -i -e 's/Journal of Computational Chemistry/J. Comput. Chem./I' **/*.bib
 sed -i -e 's/Journal of Computational Physics/J. Comput. Phys./I' **/*.bib
+sed -i -e 's/Journal of Computational Science/J. Comput. Sci./I' **/*.bib
 sed -i -e 's/Journal of Computational and Applied Mathematics/J. Comput. Appl. Math./I' **/*.bib
 sed -i -e 's/Journal of Industrial and Engineering Chemistry/J. Ind. Eng. Chem./I' **/*.bib
 sed -i -e 's/Journal of Industrial \& Engineering Chemistry/J. Ind. Eng. Chem./I' **/*.bib
@@ -110,6 +112,7 @@ sed -i -e 's/Journal of Machine Learning Research/J. Mach. Learn. Res./I' **/*.b
 sed -i -e 's/Journal of Materials Chemistry/J. Mater. Chem./I' **/*.bib
 sed -i -e 's/Journal of Molecular Graphics/J. Mol. Graph./I' **/*.bib
 sed -i -e 's/Journal of Molecular Liquids/J. Mol. Liq./I' **/*.bib
+sed -i -e 's/Journal of Molecular Modeling/J. Mol. Model./I' **/*.bib
 sed -i -e 's/Journal of Open Source Software/J. Open Source Softw./I' **/*.bib
 sed -i -e 's/Journal of Organic Chemistry/J. Org. Chem./I' **/*.bib
 sed -i -e 's/Journal of Physical Chemistry/J. Phys. Chem./I' **/*.bib
@@ -144,6 +147,7 @@ sed -i -e 's/Nature Communications/Nat. Commun./I' **/*.bib
 sed -i -e 's/Nature Materials/Nat. Mater./I' **/*.bib
 
 # O
+sed -i -e 's/Optimization Methods and Software/Optim. Methods Softw./I' **/*.bib
 
 # P
 sed -i -e 's/Proceedings of the National Academy of Sciences/Proc. Natl. Acad. Sci. U.S.A./I' **/*.bib
@@ -164,6 +168,7 @@ sed -i -e 's/RSC Advances/RSC Adv./I' **/*.bib
 sed -i -e 's/Reviews of modern physics/Rev. Mod. Phys./I' **/*.bib
 
 # S
+sed -i -e 's/Scientific Programming/Sci. Program./I' **/*.bib
 sed -i -e 's/Surface Science/Surf. Sci./I' **/*.bib
 sed -i -e 's/Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy/Spectrochim. Acta A Mol. Biomol. Spectrosc./I' **/*.bib
 sed -i -e 's/Structural Chemistry/Struct. Chem./I' **/*.bib
@@ -171,6 +176,7 @@ sed -i -e 's/Structural Chemistry/Struct. Chem./I' **/*.bib
 # T
 sed -i -e 's/The Computer Journal/Comput. J./I' **/*.bib
 sed -i -e 's/Theoretical Chemistry Accounts/Theor. Chem. Acc./I' **/*.bib
+sed -i -e 's/Theoretical Computer Science/Theor. Comput. Sci./I' **/*.bib
 sed -i -e 's/Topics in Current Chemistry/Top. Curr. Chem./I' **/*.bib
 
 # U
@@ -180,6 +186,9 @@ sed -i -e 's/Vibrational Spectroscopy/Vib. Spectrosc./I' **/*.bib
 # W
 sed -i -e 's/Wiley Interdisciplinary Reviews: Computational Molecular Science/WIREs Comput. Mol. Sci./I' **/*.bib
 sed -i -e 's/WIREs Computational Molecular Science/WIREs Comput. Mol. Sci./I' **/*.bib
+sed -i -e 's/WIREs Data Mining and Knowledge Discovery/WIREs Data. Mining. Knowl. Discov./I' **/*.bib
+
+
 
 # X
 
@@ -189,7 +198,18 @@ sed -i -e 's/WIREs Computational Molecular Science/WIREs Comput. Mol. Sci./I' **
 sed -i -e 's/Zeitschrift f{\"u}r anorganische und allgemeine Chemie/Z. anorg. allg. Chem./I' **/*.bib
 sed -i -e 's/Zeitschrift fur anorganische und allgemeine Chemie/Z. anorg. allg. Chem./I' **/*.bib
 sed -i -e 's/Zeitschrift f{\"{u}}r Physikalische Chemie/Z. Phys. Chem./I' **/*.bib # before Z. Phys. !!
+sed -i -e 's/Zeitschrift f{\"u}r Physikalische Chemie/Z. Phys. Chem./I' **/*.bib # before Z. Phys. !!
 sed -i -e 's/Zeitschrift f{\"{u}}r Physik/Z. Phys./I' **/*.bib
 
 # Remove "The" from journal names
 sed -i -e 's/The J. /J. /I' **/*.bib
+
+
+
+# Normalize
+sed -i -e 's/Phys Chem Chem Phys/Phys. Chem. Chem. Phys./I' **/*.bib
+sed -i -e 's/Commun Phys/Commun. Phys./I' **/*.bib
+sed -i -e 's/Nat Commun/Nat. Commun./I' **/*.bib
+sed -i -e 's/Sci Data/Sci. Data./I' **/*.bib
+sed -i -e 's/Nat Commun/Nat. Commun./I' **/*.bib
+sed -i -e 's/Int J of Quantum Chemistry/Int. J. Quantum Chem./I' **/*.bib
