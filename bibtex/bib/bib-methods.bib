@@ -109,88 +109,22 @@
 
 
 %-----------------------------------------------------------------------------
-%   FUNDAMENTAL: Coupled Cluster
-%-----------------------------------------------------------------------------
-
-@article{coupled-cluster,
-  title    = {On the {{Correlation Problem}} in {{Atomic}} and {{Molecular Systems}}. {{Calculation}} of {{Wavefunction Components}} in {{Ursell-Type Expansion Using Quantum-Field Theoretical Methods}}},
-  author   = {{\v C}{\'i}{\v z}ek, Ji{\v r}{\'i}},
-  year     = {1966},
-  month    = dec,
-  journal  = {J. Chem. Phys.},
-  volume   = {45},
-  number   = {11},
-  pages    = {4256--4266},
-  issn     = {0021-9606, 1089-7690},
-  doi      = {10.1063/1.1727484},
-  urldate  = {2023-10-31},
-  abstract = {A method is suggested for the calculation of the matrix elements of the logarithm of an operator which gives the exact wavefunction when operating on the wavefunction in the one-electron approximation. The method is based on the use of the creation and annihilation operators, hole\textemdash particle formalism, Wick's theorem, and the technique of Feynman-like diagrams. The connection of this method with the configuration-interaction method as well as with the perturbation theory in the quantum-field theoretical form is discussed. The method is applied to the simple models of nitrogen and benzene molecules. The results are compared with those obtained with the configuration-interaction method considering all possible configurations within the chosen basis of one-electron functions.},
-  langid   = {english}
-}
-
-@article{ccsd-t,
-  title    = {A Fifth-Order Perturbation Comparison of Electron Correlation Theories},
-  author   = {Raghavachari, Krishnan and Trucks, Gary W. and Pople, John A. and {Head-Gordon}, Martin},
-  year     = {1989},
-  month    = may,
-  journal  = {Chem. Phys. Lett.},
-  volume   = {157},
-  number   = {6},
-  pages    = {479--483},
-  issn     = {0009-2614},
-  doi      = {10.1016/S0009-2614(89)87395-6},
-  urldate  = {2023-10-31},
-  abstract = {Electron correlation theories such as configuration interaction (CI), coupled-cluster theory (CC), and quadratic configuration interaction (QCI) are assessed by means of a M\"oller-Plesset perturbation expansion of the correlation energy up to fifth order. The computational efficiencies and relative merits of the different techniques are outlined. A new augmented version of coupled-cluster theory, denoted as CCSD(T), is proposed to remedy some of the deficiencies of previous augmented coupled-cluster models.}
-}
-
-
-%-----------------------------------------------------------------------------
-%   LOCAL METHODS
-%-----------------------------------------------------------------------------
-
-@article{dlpno-ccsdt,
-  author    = {Christoph Riplinger and Barbara Sandhoefer and Andreas Hansen and Frank Neese},
-  journal   = {J. Chem. Phys.},
-  title     = {Natural triple excitations in local coupled cluster calculations with pair natural orbitals},
-  year      = {2013},
-  month     = {10},
-  number    = {13},
-  pages     = {134101},
-  volume    = {139},
-  doi       = {10.1063/1.4821834},
-  publisher = {{AIP} Publishing}
-}
-
-@article{dlpno-sparse-1,
-  author    = {Christoph Riplinger and Peter Pinski and Ute Becker and Edward F. Valeev and Frank Neese},
-  journal   = {J. Chem. Phys.},
-  title     = {Sparse maps{\textemdash}A systematic infrastructure for reduced-scaling electronic structure methods. {II}. Linear scaling domain based pair natural orbital coupled cluster theory},
-  year      = {2016},
-  month     = {1},
-  number    = {2},
-  pages     = {024109},
-  volume    = {144},
-  doi       = {10.1063/1.4939030},
-  publisher = {{AIP} Publishing}
-}
-
-@article{dlpno-sparse-2,
-  author    = {Peter Pinski and Christoph Riplinger and Edward F. Valeev and Frank Neese},
-  journal   = {J. Chem. Phys.},
-  title     = {Sparse maps{\textemdash}A systematic infrastructure for reduced-scaling electronic structure methods. I. An efficient and simple linear scaling local {MP}2 method that uses an intermediate basis of pair natural orbitals},
-  year      = {2015},
-  month     = {7},
-  number    = {3},
-  pages     = {034108},
-  volume    = {143},
-  doi       = {10.1063/1.4926879},
-  publisher = {{AIP} Publishing}
-}
-
-
-%-----------------------------------------------------------------------------
 %   COUNTERPOISE CORRECTION
 %-----------------------------------------------------------------------------
+
+@article{counterpoise,
+  author    = {S.F. Boys and F. Bernardi},
+  title     = {The calculation of small molecular interactions by the differences of separate total energies. Some procedures with reduced errors},
+  journal   = {Molecular Physics},
+  volume    = {19},
+  number    = {4},
+  pages     = {553--566},
+  year      = {1970},
+  publisher = {Taylor \& Francis},
+  doi       = {10.1080/00268977000101561},
+  url       = {https://doi.org/10.1080/00268977000101561},
+  eprint    = {https://doi.org/10.1080/00268977000101561}
+}
 
 % Geometrical Counterpoise Correction
 
@@ -225,18 +159,18 @@
 %   TIGHT BINDING
 %-----------------------------------------------------------------------------
 
-% Density Function Tight Binding 3
-@article{dftb3,
-  author    = {Michael Gaus and Qiang Cui and Marcus Elstner},
-  journal   = {J. Chem. Theory Comput.},
-  title     = {{DFTB}3: Extension of the Self-Consistent-Charge Density-Functional Tight-Binding Method ({SCC}-{DFTB})},
-  year      = {2011},
-  month     = {3},
-  number    = {4},
-  pages     = {931--948},
-  volume    = {7},
-  doi       = {10.1021/ct100684s},
-  publisher = {American Chemical Society ({ACS})}
+@article{sph,
+  author  = {Spicher, Sebastian and Grimme, Stefan},
+  title   = {Single-Point Hessian Calculations for Improved Vibrational Frequencies and Rigid-Rotor-Harmonic-Oscillator Thermodynamics},
+  journal = {Journal of Chemical Theory and Computation},
+  volume  = {17},
+  number  = {3},
+  pages   = {1701-1714},
+  year    = {2021},
+  doi     = {10.1021/acs.jctc.0c01306},
+  note    = {PMID: 33554604},
+  url     = {https://doi.org/10.1021/acs.jctc.0c01306},
+  eprint  = {https://doi.org/10.1021/acs.jctc.0c01306}
 }
 
 
@@ -448,10 +382,289 @@
   url        = {https://doi.org/10.1145/321296.321305},
   doi        = {10.1145/321296.321305},
   journal    = {J. ACM},
-  month      = {oct},
+  month      = {10},
   pages      = {547–560},
   numpages   = {14},
   publisher  = {Association for Computing Machinery ({ACM})}
+}
+
+
+%-----------------------------------------------------------------------------
+%   NMR CALCULATIONS
+%-----------------------------------------------------------------------------
+
+@article{nmr-review,
+  title     = {Ab {{Initio Methods}} for the {{Calculation}} of {{NMR Shielding}} and {{Indirect Spin}}-{{Spin Coupling Constants}}},
+  author    = {Helgaker, Trygve and Jaszu{\'n}ski, Micha{\l} and Ruud, Kenneth},
+  year      = {1999},
+  month     = {1},
+  journal   = {Chem. Rev.},
+  volume    = {99},
+  number    = {1},
+  pages     = {293--352},
+  publisher = {American Chemical Society},
+  issn      = {0009-2665},
+  doi       = {10.1021/cr960017t},
+  urldate   = {2024-12-10}
+}
+
+@article{nmr-giao-1,
+  title     = {{Th{\'e}orie quantique des courants interatomiques dans les combinaisons aromatiques}},
+  author    = {London, F.},
+  year      = {1937},
+  month     = {10},
+  journal   = {J. Phys. Radium},
+  volume    = {8},
+  number    = {10},
+  pages     = {397--409},
+  publisher = {Soci{\'e}t{\'e} Fran{\c c}aise de Physique},
+  issn      = {0368-3842, 2777-3442},
+  doi       = {10.1051/jphysrad:01937008010039700},
+  urldate   = {2024-12-10},
+  abstract  = {Journal de Physique et Le Radium, Journal de Physique Archives repr{\'e}sente une mine dinformations facile {\`a} consulter sur la mani{\`e}re dont la physique a {\'e}t{\'e} publi{\'e}e depuis 1872.},
+  langid    = {french}
+}
+
+@article{nmr-giao-2,
+  title      = {Self-Consistent Perturbation Theory of Diamagnetism: {{I}}. {{A}} Gauge-Invariant {{LCAO}} Method for {{N}}.{{M}}.{{R}}. Chemical Shifts},
+  shorttitle = {Self-Consistent Perturbation Theory of Diamagnetism},
+  author     = {Ditchfield, Robert},
+  year       = {1974},
+  month      = {4},
+  journal    = {Molecular Physics},
+  volume     = {27},
+  number     = {4},
+  pages      = {789--807},
+  publisher  = {Taylor \& Francis},
+  issn       = {0026-8976},
+  doi        = {10.1080/00268977400100711},
+  urldate    = {2024-12-10},
+  abstract   = {An ab initio gauge-invariant molecular orbital theory is developed for nuclear magnetic shielding. The molecular orbitals are written as linear combinations of gauge-invariant atomic orbitals, the wavefunctions in the presence of a uniform external magnetic field being determined by self-consistent field perturbation theory. The final magnetic shielding result is broken up into contributions which can be related to various features of electronic structure. Calculated magnetic shielding constants are presented using three sets of atomic orbitals, all of which are taken as contracted gaussian-type functions. The first two sets are minimal and the third is slightly extended. All three levels of theory give good descriptions of shielding at first row and hydrogen atoms. Carbon and hydrogen chemical shifts calculated at the extended level are in excellent agreement with experimental values.}
+}
+
+@article{nmr-giao-3,
+  title     = {Efficient Implementation of the Gauge-Independent Atomic Orbital Method for {{NMR}} Chemical Shift Calculations},
+  author    = {Wolinski, Krzysztof and Hinton, James F. and Pulay, Peter},
+  year      = {1990},
+  month     = {11},
+  journal   = {J. Am. Chem. Soc.},
+  volume    = {112},
+  number    = {23},
+  pages     = {8251--8260},
+  publisher = {American Chemical Society},
+  issn      = {0002-7863},
+  doi       = {10.1021/ja00179a005},
+  urldate   = {2024-12-10}
+}
+
+
+%-----------------------------------------------------------------------------
+%   RELATIVISTIC
+%-----------------------------------------------------------------------------
+
+@article{x2c-1,
+  title    = {Quasirelativistic Theory Equivalent to Fully Relativistic Theory},
+  author   = {Kutzelnigg, Werner and Liu, Wenjian},
+  year     = {2005},
+  month    = {12},
+  journal  = {The Journal of Chemical Physics},
+  volume   = {123},
+  number   = {24},
+  pages    = {241102},
+  issn     = {0021-9606},
+  doi      = {10.1063/1.2137315},
+  urldate  = {2024-12-10},
+  abstract = {The Dirac operator in a matrix representation in a kinetically balanced basis is transformed to a quasirelativistic Hamiltonian matrix, that has the same electronic eigenstates as the original Dirac matrix. This transformation involves a matrix X, for which an exact identity is derived, and which can be constructed either in a noniterative way or by various iteration schemes, without requiring an expansion parameter. The convergence behavior of five different iteration schemes is studied numerically, with very promising results.}
+}
+
+@article{x2c-2,
+  title    = {Infinite-Order Quasirelativistic Density Functional Method Based on the Exact Matrix Quasirelativistic Theory},
+  author   = {Liu, Wenjian and Peng, Daoling},
+  year     = {2006},
+  month    = {7},
+  journal  = {The Journal of Chemical Physics},
+  volume   = {125},
+  number   = {4},
+  pages    = {044102},
+  issn     = {0021-9606},
+  doi      = {10.1063/1.2222365},
+  urldate  = {2024-12-10},
+  abstract = {The exact one-electron matrix quasirelativistic theory [Kutzelnigg and Liu, J. Chem. Phys.\hphantom{,}123, 241102 (2005)] is extended to the effective one-particle Kohn-Sham scheme of density functional theory. Several variants of the resultant theory are discussed. Although they are in principle equivalent, consideration of computational efficiency strongly favors the one (F{\textasciimacron}+) in which the effective potential remains untransformed. Further combined with the atomic approximation for the matrix X relating the small and large components of the Dirac spinors as well as a simple ansatz for correcting the two-electron picture change errors, a very elegant, accurate, and efficient infinite-order quasirelativistic approach is obtained, which is far simpler than all existing quasirelativistic theories and must hence be regarded as a breakthrough in relativistic quantum chemistry. In passing, it is also shown that the Dirac-Kohn-Sham scheme can be made as efficient as two-component approaches without compromising the accuracy. To demonstrate the performance of the new methods, atomic calculations on Hg and E117 are first carried out. The spectroscopic constants (bond length, vibrational frequency, and dissociation energy) of E1172 are then reported. All the results are in excellent agreement with those of the Dirac-Kohn-Sham calculations.}
+}
+
+@article{x2c-3,
+  title    = {Making Four- and Two-Component Relativistic Density Functional Methods Fully Equivalent Based on the Idea of ``from Atoms to Molecule''},
+  author   = {Peng, Daoling and Liu, Wenjian and Xiao, Yunlong and Cheng, Lan},
+  year     = {2007},
+  month    = {9},
+  journal  = {The Journal of Chemical Physics},
+  volume   = {127},
+  number   = {10},
+  pages    = {104106},
+  issn     = {0021-9606},
+  doi      = {10.1063/1.2772856},
+  urldate  = {2024-12-10},
+  abstract = {It is shown that four- and two-component relativistic Kohn-Sham methods of density functional theory can be made fully equivalent in all the aspects of simplicity, accuracy, and efficiency. In particular, this has been achieved based solely on physical arguments rather than on mathematical tricks. The central idea can be visualized as ``from atoms to molecule,'' reflecting that the atomic information is employed to ``synthesize'' the molecular no-pair relativistic Hamiltonian. That is, the molecular relativistic Hamiltonian can, without loss of accuracy, be projected onto the positive energy states of the isolated Dirac atoms with the projector approximated simply by the superposition of the atomic ones. The dimension of the four-component Hamiltonian matrix then becomes the same as that of a two-component one. Another essential ingredient is to formulate quasirelativistic theory on matrix form rather than on operator form. The resultant quasi-four-component, normalized elimination of the small component, and symmetrized elimination of the small component approaches are critically examined by taking the molecules of MH and M2 (M=At, E117) as examples.}
+}
+
+@article{x2c-4,
+  title    = {An Infinite-Order Two-Component Relativistic {{Hamiltonian}} by a Simple One-Step Transformation},
+  author   = {Ilia{\v s}, Miroslav and Saue, Trond},
+  year     = {2007},
+  month    = {2},
+  journal  = {The Journal of Chemical Physics},
+  volume   = {126},
+  number   = {6},
+  pages    = {064102},
+  issn     = {0021-9606},
+  doi      = {10.1063/1.2436882},
+  urldate  = {2024-12-10},
+  abstract = {The authors report the implementation of a simple one-step method for obtaining an infinite-order two-component (IOTC) relativistic Hamiltonian using matrix algebra. They apply the IOTC Hamiltonian to calculations of excitation and ionization energies as well as electric and magnetic properties of the radon atom. The results are compared to corresponding calculations using identical basis sets and based on the four-component Dirac-Coulomb Hamiltonian as well as Douglas-Kroll-Hess and zeroth-order regular approximation Hamiltonians, all implemented in the DIRAC program package, thus allowing a comprehensive comparison of relativistic Hamiltonians within the finite basis approximation.}
+}
+
+@article{x2c-5,
+  title    = {An Efficient Implementation of Two-Component Relativistic Exact-Decoupling Methods for Large Molecules},
+  author   = {Peng, Daoling and Middendorf, Nils and Weigend, Florian and Reiher, Markus},
+  year     = {2013},
+  month    = {5},
+  journal  = {The Journal of Chemical Physics},
+  volume   = {138},
+  number   = {18},
+  pages    = {184105},
+  issn     = {0021-9606},
+  doi      = {10.1063/1.4803693},
+  urldate  = {2024-12-10},
+  abstract = {We present an efficient algorithm for one- and two-component relativistic exact-decoupling calculations. Spin-orbit coupling is thus taken into account for the evaluation of relativistically transformed (one-electron) Hamiltonian. As the relativistic decoupling transformation has to be evaluated with primitive functions, the construction of the relativistic one-electron Hamiltonian becomes the bottleneck of the whole calculation for large molecules. For the established exact-decoupling protocols, a minimal matrix operation count is established and discussed in detail. Furthermore, we apply our recently developed local DLU scheme [D. Peng and M. Reiher, J. Chem. Phys.\hphantom{,}136, 244108 (2012)]10.1063/1.4729788 to accelerate this step. With our new implementation two-component relativistic density functional calculations can be performed invoking the resolution-of-identity density-fitting approximation and (Abelian as well as non-Abelian) point group symmetry to accelerate both the exact-decoupling and the two-electron part. The capability of our implementation is illustrated at the example of silver clusters with up to 309 atoms, for which the cohesive energy is calculated and extrapolated to the bulk.}
+}
+
+@article{zora,
+  title    = {Relativistic Regular Two-component {{Hamiltonians}}},
+  author   = {van Lenthe, E. and Baerends, E. J. and Snijders, J. G.},
+  year     = {1993},
+  month    = {9},
+  journal  = {The Journal of Chemical Physics},
+  volume   = {99},
+  number   = {6},
+  pages    = {4597--4610},
+  issn     = {0021-9606},
+  doi      = {10.1063/1.466059},
+  urldate  = {2024-12-10},
+  abstract = {In this paper, potential-dependent transformations are used to transform the four-component Dirac Hamiltonian to effective two-component regular Hamiltonians. To zeroth order, the expansions give second order differential equations (just like the Schr{\"o}dinger equation), which already contain the most important relativistic effects, including spin--orbit coupling. One of the zero order Hamiltonians is identical to the one obtained earlier by Chang, Pelissier, and Durand [Phys. Scr. 34, 394 (1986)]. Self-consistent all-electron and frozen-core calculations are performed as well as first order perturbation calculations for the case of the uranium atom using these Hamiltonians. They give very accurate results, especially for the one-electron energies and densities of the valence orbitals.}
+}
+@article{zora-dft,
+  title      = {Density Functional Calculations of Nuclear Magnetic Shieldings Using the Zeroth-Order Regular Approximation ({{ZORA}}) for Relativistic Effects: {{ZORA}} Nuclear Magnetic Resonance},
+  shorttitle = {Density Functional Calculations of Nuclear Magnetic Shieldings Using the Zeroth-Order Regular Approximation ({{ZORA}}) for Relativistic Effects},
+  author     = {Wolff, S. K. and Ziegler, T. and {van Lenthe}, E. and Baerends, E. J.},
+  year       = {1999},
+  month      = {4},
+  journal    = {The Journal of Chemical Physics},
+  volume     = {110},
+  number     = {16},
+  pages      = {7689--7698},
+  issn       = {0021-9606},
+  doi        = {10.1063/1.478680},
+  urldate    = {2024-12-10},
+  abstract   = {We present a new relativistic formulation for the calculation of nuclear magnetic resonance (NMR) shielding tensors. The formulation makes use of gauge-including atomic orbitals and is based on density functional theory. The relativistic effects are included by making use of the zeroth-order regular approximation. This formulation has been implemented and the Hg199 NMR shifts of HgMe2, HgMeCN, Hg(CN)2, HgMeCl, HgMeBr, HgMeI, HgCl2,\hphantom{,}HgBr2, and HgI2 have been calculated using both experimental and optimized geometries. For experimental geometries, good qualitative agreement with experiment is obtained. Quantitatively, the calculated results deviate from experiment on average by 163 ppm, which is approximately 3\% of the range of Hg199 NMR. The experimental effects of an electron donating solvent on the mercury shifts have been reproduced with calculations on HgCl2(NH3)2,\hphantom{,}HgBr2(NH3)2, and HgI2(NH3)2. In addition, it is shown that the mercury NMR shieldings are sensitive to geometry with changes for HgCl2 of approximately 50 ppm for each 0.01 {\AA} {\enspace}change in bond length, and 100 ppm for each 10{$^\circ$} change in bond angle.}
+}
+
+
+%-----------------------------------------------------------------------------
+%   ENERGY DECOMPOSITION
+%-----------------------------------------------------------------------------
+
+@article{hfld-1,
+  title      = {{{HFLD}}: {{A Nonempirical London Dispersion-Corrected Hartree}}--{{Fock Method}} for the {{Quantification}} and {{Analysis}} of {{Noncovalent Interaction Energies}} of {{Large Molecular Systems}}},
+  shorttitle = {{{HFLD}}},
+  author     = {Altun, Ahmet and Neese, Frank and Bistoni, Giovanni},
+  year       = {2019},
+  month      = {11},
+  journal    = {J. Chem. Theory Comput.},
+  volume     = {15},
+  number     = {11},
+  pages      = {5894--5907},
+  publisher  = {American Chemical Society},
+  issn       = {1549-9618},
+  doi        = {10.1021/acs.jctc.9b00425},
+  urldate    = {2024-12-13},
+  abstract   = {A nonempirical quantum mechanical method for the efficient and accurate quantification and analysis of intermolecular interactions is presented and tested on existing benchmark sets. The leading idea here is to focus on the intermolecular part of the correlation energy that contains the all-important London dispersion (LD) interaction. To keep the cost of the method low, essentially at the level of a Hartree--Fock (HF) calculation, the intramolecular part of the correlation energy is neglected. We also neglect the nondispersive parts of the intermolecular correlation energy. This scheme that we denote as Hartree--Fock plus London dispersion (HFLD) can be readily realized on the basis of the recently reported multilevel implementation of the domain-based local pair natural orbital coupled-cluster (DLPNO-CC) theory in conjunction with the well-established local energy decomposition (LED) analysis. The accuracy and efficiency of the HFLD method are evaluated on rare gas dimers, on the S66 and L7 benchmark sets of noncovalent interactions, and on an additional set (LP14) consisting of bulky Lewis pairs held together by intermolecular interactions of various strengths, with interaction energies ranging from -8 to -107 kcal/mol. It is first shown that the LD energy calculated with this approach is essentially identical to that obtained from the full DLPNO-CCSD(T)/LED calculation, with a mean absolute error of 0.2 kcal/mol on the S66 benchmark set. Moreover, in terms of the overall interaction energies, the HFLD method shows an efficiency that is comparable to that of the HF method, while retaining an accuracy between that of the DLPNO-CCSD and DLPNO-CCSD(T) schemes. Since the underlying DLPNO-CCSD method is linear scaling with respect to the system size, the HFLD approach also does not lead to new bottlenecks for large systems. As an illustrative example of its efficiency, the HFLD scheme was applied to the interaction between the substrate and the residues in the active site of the cyclohexanone monooxygenase enzyme. The excellent cost/performance ratio indicates that the HFLD method opens new avenues for the accurate calculation and analysis of noncovalent interaction energies in large molecular systems.},
+}
+
+@article{hfld-2,
+  title     = {Open-{{Shell Variant}} of the {{London Dispersion-Corrected Hartree}}--{{Fock Method}} ({{HFLD}}) for the {{Quantification}} and {{Analysis}} of {{Noncovalent Interaction Energies}}},
+  author    = {Altun, Ahmet and Neese, Frank and Bistoni, Giovanni},
+  year      = {2022},
+  month     = {4},
+  journal   = {J. Chem. Theory Comput.},
+  volume    = {18},
+  number    = {4},
+  pages     = {2292--2307},
+  publisher = {American Chemical Society},
+  issn      = {1549-9618},
+  doi       = {10.1021/acs.jctc.1c01295},
+  urldate   = {2024-12-13},
+  abstract  = {The London dispersion (LD)-corrected Hartree--Fock (HF) method (HFLD) is an ab initio approach for the quantification and analysis of noncovalent interactions (NCIs) in large systems that is based on the domain-based local pair natural orbital coupled-cluster (DLPNO-CC) theory. In the original HFLD paper, we discussed the implementation, accuracy, and efficiency of its closed-shell variant. Herein, an extension of this method to open-shell molecular systems is presented. Its accuracy is tested on challenging benchmark sets for NCIs, using CCSD(T) energies at the estimated complete basis set limit as reference. The HFLD scheme was found to be as accurate as the best-performing dispersion-corrected exchange-correlation functionals, while being nonempirical and equally efficient. In addition, it can be combined with the well-established local energy decomposition (LED) for the analysis of NCIs, thus yielding additional physical insights.},
+}
+
+@article{led-1,
+  title     = {Decomposition of {{Intermolecular Interaction Energies}} within the {{Local Pair Natural Orbital Coupled Cluster Framework}}},
+  author    = {Schneider, Wolfgang B. and Bistoni, Giovanni and Sparta, Manuel and Saitow, Masaaki and Riplinger, Christoph and Auer, Alexander A. and Neese, Frank},
+  year      = {2016},
+  month     = {10},
+  journal   = {J. Chem. Theory Comput.},
+  volume    = {12},
+  number    = {10},
+  pages     = {4778--4792},
+  publisher = {American Chemical Society},
+  issn      = {1549-9618},
+  doi       = {10.1021/acs.jctc.6b00523},
+  urldate   = {2024-12-13},
+  abstract  = {The local coupled cluster method DLPNO-CCSD(T) allows calculations on systems containing hundreds of atoms to be performed while typically reproducing canonical CCSD(T) energies with chemical accuracy. In this work, we present a scheme for decomposing the DLPNO-CCSD(T) interaction energy between two molecules into physical meaningful contributions, providing a quantification of the most important components of the chemical interaction. The method, called Local Energy Decomposition (LED), is straightforward and requires negligible additional computing time. Both the Hartree--Fock and the correlation energy are decomposed into contributions from localized or pairs of localized occupied orbitals. Assigning these localized orbitals to fragments allows one to differentiate between intra- and intermolecular contributions to the interaction energy. Accordingly, the interaction energy can be decomposed into electronic promotion, electrostatic, exchange, dynamic charge polarization, and dispersion contributions. The LED scheme is applied to a number of test cases ranging from weakly, dispersively bound complexes to systems with strong ionic interactions. The dependence of the results on the one-particle basis set and various technical aspects, such as the localization scheme, are carefully studied in order to ensure that the results do not suffer from technical artifacts. A numerical comparison between the DLPNO-CCSD(T)/LED and the popular symmetry adapted perturbation theory (DFT-SAPT) is made, and the limitations of the proposed scheme are discussed.},
+  file      = {/home/marvin/Zotero/storage/GTX99N8V/Schneider et al. - 2016 - Decomposition of Intermolecular Interaction Energi.pdf}
+}
+
+@article{led-2,
+  title     = {Local {{Energy Decomposition}} of {{Open-Shell Molecular Systems}} in the {{Domain-Based Local Pair Natural Orbital Coupled Cluster Framework}}},
+  author    = {Altun, Ahmet and Saitow, Masaaki and Neese, Frank and Bistoni, Giovanni},
+  year      = {2019},
+  month     = {3},
+  journal   = {J. Chem. Theory Comput.},
+  volume    = {15},
+  number    = {3},
+  pages     = {1616--1632},
+  publisher = {American Chemical Society},
+  issn      = {1549-9618},
+  doi       = {10.1021/acs.jctc.8b01145},
+  urldate   = {2024-12-13},
+  abstract  = {Local energy decomposition (LED) analysis decomposes the interaction energy between two fragments calculated at the domain-based local pair natural orbital CCSD(T) (DLPNO-CCSD(T)) level of theory into a series of chemically meaningful contributions and has found widespread applications in the study of noncovalent interactions. Herein, an extension of this scheme that allows for the analysis of interaction energies of open-shell molecular systems calculated at the UHF-DLPNO-CCSD(T) level is presented. The new scheme is illustrated through applications to the CH2{$\cdot\cdot\cdot$}X (X = He, Ne, Ar, Kr, and water) and heme{$\cdot\cdot\cdot$}CO interactions in the low-lying singlet and triplet spin states. The results are used to discuss the mechanism that governs the change in the singlet--triplet energy gap of methylene and heme upon adduct formation.},
+}
+
+@article{led-3,
+  title      = {Finding Chemical Concepts in the {{Hilbert}} Space: {{Coupled}} Cluster Analyses of Noncovalent Interactions},
+  shorttitle = {Finding Chemical Concepts in the {{Hilbert}} Space},
+  author     = {Bistoni, Giovanni},
+  year       = {2020},
+  journal    = {WIREs Computational Molecular Science},
+  volume     = {10},
+  number     = {3},
+  pages      = {e1442},
+  issn       = {1759-0884},
+  doi        = {10.1002/wcms.1442},
+  urldate    = {2024-12-17},
+  abstract   = {Noncovalent interactions (NCIs) play a major role in essentially all fields of chemical research. Energy decomposition analysis (EDA) schemes provide in-depth insights into their nature by decomposing interaction energies into additive contributions, such as electrostatics, polarization, and London dispersion. Although modern local variants of the ``gold standard'' coupled-cluster singles and doubles method plus perturbative triples (CCSD(T)) have made it possible to accurately quantify NCIs for relatively large systems, extracting chemically meaningful energy terms from such high level electronic structure calculations has been a long lasting challenge in computational chemistry. This review describes basic principles, interpretative aspects and applications of recently developed coupled cluster-based EDAs for the analysis of NCIs. The focus is on computationally efficient methods for systems with a few hundred atoms, for example, the recently introduced local energy decomposition analysis. In order to draw connections between different interpretative frameworks, these schemes are compared with other popular approaches for the quantification and analysis of NCIs, such as Symmetry Adapted Perturbation Theory and supermolecular EDAs based on mean-field as well as correlated approaches. Strengths and limitations of the various techniques are discussed. This article is characterized under: Electronic Structure Theory {$>$} Ab Initio Electronic Structure Methods Structure and Mechanism {$>$} Molecular Structures},
+  langid     = {english},
+  keywords   = {coupled cluster,energy decomposition analysis,local correlation,local energy decomposition,London dispersion},
+}
+
+@book{atoms-in-molecules-baader,
+  author    = {Bader, Richard F W},
+  title     = {Atoms in Molecules: A Quantum Theory},
+  publisher = {Oxford University Press},
+  year      = {1990},
+  month     = {12},
+  abstract  = {The molecular structure hypothesis - that a molecule is a collection of atoms linked by a network of bonds - was forged in the crucible of nineteenth-century experimental chemistry and has continued to serve as the principal means of ordering and classifying the observations of chemistry. There is a difficulty with the hypothesis, however, in that it is not related directly to the physics which governs the motions of the nuclei and electrons that make up the atoms and the bonds. It is the purpose of this important new book to show that a theory can be developed to underpin the molecular structure hypothesis - that the atoms in a molecule are real, with properties predicted and defined by the laws of quantum mechanics, and that the structure their presence imparts to a molecule is indeed a consequence of the underlying physics.  As a result the classification based upon the concept of atoms in molecules is freed from its empirical constraints and the full predictive power of quantum mechanics.  As a result the full predictive power of quantum mechanics can be incorporated into the resulting theory - a theory of atoms in molecules. The book is aimed at those scientists responsible for performing the experiments and collecting the observations on the properties of matter at the atomic level, in the belief that the transformation of qualitative concepts into a quantitative theory will serve to deepen our understanding of chemistry.},
+  isbn      = {9780198551683},
+  doi       = {10.1093/oso/9780198551683.001.0001},
+  url       = {https://doi.org/10.1093/oso/9780198551683.001.0001}
 }
 
 
@@ -464,7 +677,7 @@
   journal   = {J. Comput. Phys.},
   title     = {Analysis of methods for calculating spectral properties in solids},
   year      = {1972},
-  month     = {dec},
+  month     = {12},
   number    = {3},
   pages     = {432--465},
   volume    = {10},
@@ -502,7 +715,7 @@
 %   MD METHODS
 %-----------------------------------------------------------------------------
 
-% particle-particle particle mesh 
+% particle-particle particle mesh
 @book{pppm,
   author    = {Hockney, Roger W and Eastwood, James W},
   publisher = {crc Press},

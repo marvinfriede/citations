@@ -13,4 +13,4 @@ sed -i -e "s/month     = {8}/month     = {aug}/" **/*.bib
 sed -i -e "s/month     = {9}/month     = {sep}/" **/*.bib
 sed -i -e "s/month     = {10}/month     = {oct}/" **/*.bib
 sed -i -e "s/month     = {11}/month     = {nov}/" **/*.bib
-sed -i -e "s/month     = {12}/month     = {dez}/" **/*.bib
+sed -i -e "s/month     = {12}/month     = {dec}/" **/*.bib

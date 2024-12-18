@@ -69,7 +69,7 @@
   pages   = {3163-3170},
   year    = {2015},
   doi     = {10.1021/acs.jctc.5b00400},
-  url     = {https://doi.org/10.1021/acs.jctc.5b00400},
+  url     = {https://doi.org/10.1021/acs.jctc.5b00400}
 }
 @article{dftd3-mod,
   author  = {Smith, Daniel G. A. and Burns, Lori A. and Patkowski, Konrad and Sherrill, C. David},
@@ -80,7 +80,7 @@
   pages   = {2197-2203},
   year    = {2016},
   doi     = {10.1021/acs.jpclett.6b00780},
-  url     = {https://doi.org/10.1021/acs.jpclett.6b00780},
+  url     = {https://doi.org/10.1021/acs.jpclett.6b00780}
 }
 @article{dftd3-op,
   author  = {Witte, Jonathon and Mardirossian, Narbe and Neaton, Jeffrey B. and Head-Gordon, Martin},
@@ -91,7 +91,7 @@
   pages   = {2043-2052},
   year    = {2017},
   doi     = {10.1021/acs.jctc.7b00176},
-  url     = {https://doi.org/10.1021/acs.jctc.7b00176},
+  url     = {https://doi.org/10.1021/acs.jctc.7b00176}
 }
 
 % DFT-D4
@@ -133,6 +133,21 @@
   publisher = {Royal Society of Chemistry ({RSC})}
 }
 
+@article{dftd4-actinides,
+  author    = {Wittmann, Lukas and Gordiy, Igor and Friede, Marvin and Helmich-Paris, Benjamin and Grimme, Stefan and Hansen, Andreas and Bursch, Markus},
+  title     = {Extension of the D3 and D4 London dispersion corrections to the full actinides series},
+  journal   = {Phys. Chem. Chem. Phys.},
+  year      = {2024},
+  volume    = {26},
+  issue     = {32},
+  pages     = {21379-21394},
+  publisher = {The Royal Society of Chemistry},
+  doi       = {10.1039/D4CP01514B},
+  url       = {http://dx.doi.org/10.1039/D4CP01514B},
+  abstract  = {Efficient dispersion corrections are an indispensable component of modern density functional theory{,} semi-empirical quantum mechanical{,} and even force field methods. In this work{,} we extend the well established D3 and D4 London dispersion corrections to the full actinides series{,} francium{,} and radium. To keep consistency with the existing versions{,} the original parameterization strategy of the D4 model was only slightly modified. This includes improved reference Hirshfeld atomic partial charges at the ωB97M-V/ma-def-TZVP level to fit the required electronegativity equilibration charge (EEQ) model. In this context{,} we developed a new actinide data set called AcQM{,} which covers the most common molecular actinide compound space. Furthermore{,} the efficient calculation of dynamic polarizabilities that are needed to construct CAB6 dispersion coefficients was implemented into the ORCA program package. The extended models are assessed for the computation of dissociation curves of actinide atoms and ions{,} geometry optimizations of crystal structure cutouts{,} gas-phase structures of small uranium compounds{,} and an example extracted from a small actinide complex protein assembly. We found that the novel parameterizations perform on par with the computationally more demanding density-dependent VV10 dispersion correction. With the presented extension{,} the excellent cost-accuracy ratio of the D3 and D4 models can now be utilized in various fields of computational actinide chemistry and{,} e.g.{,} in efficient composite DFT methods such as r2SCAN-3c. They are implemented in our freely available standalone codes (dftd4{,} s-dftd3) and the D4 version will be also available in the upcoming ORCA 6.0 program package.}
+}
+
+
 %-----------------------------------------------------------------------------
 %   OTHER DISPERSION CORRECTION SCHEMES
 %-----------------------------------------------------------------------------
@@ -141,7 +156,7 @@
   title     = {Accurate {{Molecular Van Der Waals Interactions}} from {{Ground-State Electron Density}} and {{Free-Atom Reference Data}}},
   author    = {Tkatchenko, Alexandre and Scheffler, Matthias},
   year      = {2009},
-  month     = feb,
+  month     = {2},
   journal   = {Phys. Rev. Lett.},
   volume    = {102},
   number    = {7},
@@ -157,7 +172,7 @@
   title     = {Accurate and {{Efficient Method}} for {{Many-Body}} van Der {{Waals Interactions}}},
   author    = {Tkatchenko, Alexandre and DiStasio, Robert A. and Car, Roberto and Scheffler, Matthias},
   year      = {2012},
-  month     = jun,
+  month     = {6},
   journal   = {Phys. Rev. Lett.},
   volume    = {108},
   number    = {23},
@@ -169,6 +184,24 @@
   file      = {/home/friede/Zotero/storage/KXYCMSQY/Tkatchenko et al. - 2012 - Accurate and Efficient Method for Many-Body van de.pdf}
 }
 
+@article{vv10,
+  title        = {Nonlocal van Der {{Waals}} Density Functional: {{The}} Simpler the Better},
+  shorttitle   = {Nonlocal van Der {{Waals}} Density Functional},
+  author       = {Vydrov, Oleg A. and Van Voorhis, Troy},
+  date         = {2010-12-28},
+  year         = {2010},
+  journaltitle = {J. Chem. Phys.},
+  journal      = {J. Chem. Phys.},
+  volume       = {133},
+  number       = {24},
+  pages        = {244103},
+  publisher    = {{American Institute of Physics}},
+  issn         = {0021-9606},
+  doi          = {10.1063/1.3521275},
+  url          = {https://aip.scitation.org/doi/10.1063/1.3521275},
+  urldate      = {2023-03-10},
+  abstract     = {We devise a nonlocal correlation energy functional that describes the entire range of dispersion interactions in a seamless fashion using only the electron density as input. The new functional is considerably simpler than its predecessors of a similar type. The functional has a tractable and robust analytic form that lends itself to efficient self-consistent implementation. When paired with an appropriate exchange functional, our nonlocal correlation model yields accurate interaction energies of weakly-bound complexes, not only near the energy minima but also far from equilibrium. Our model exhibits an outstanding precision at predicting equilibrium intermonomer separations in van der Waals complexes. It also gives accurate covalent bond lengths and atomization energies. Hence the functional proposed in this work is a computationally inexpensive electronic structure tool of broad applicability.},
+}
 
 
 %-----------------------------------------------------------------------------
@@ -283,4 +316,3 @@
   doi       = {10.1007/bf01341258},
   publisher = {Springer Science and Business Media {LLC}}
 }
-

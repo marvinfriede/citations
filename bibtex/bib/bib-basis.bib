@@ -68,7 +68,7 @@
   month   = {09},
   issn    = {0021-9606},
   doi     = {10.1063/5.0058766},
-  url     = {https://doi.org/10.1063/5.0058766},
+  url     = {https://doi.org/10.1063/5.0058766}
 }
 
 @article{rij-orca,
@@ -201,8 +201,7 @@
   volume     = {7},
   number     = {18},
   journal    = {Phys. Chem. Chem. Phys.},
-  doi        = {10.1039/B508541A},
-  file       = {http://www.ncbi.nlm.nih.gov/pubmed/16240044}
+  doi        = {10.1039/B508541A}
 }
 
 @article{def2-tzvp,
@@ -215,7 +214,6 @@
   volume     = {7},
   abstract   = {Gaussian basis sets of quadruple zeta valence quality for Rb-Rn are presented, as well as bases of split valence and triple zeta valence quality for H-Rn. The latter were obtained by (partly) modifying bases developed previously. A large set of more than 300 molecules representing (nearly) all elements-except lanthanides-in their common oxidation states was used to assess the quality of the bases all across the periodic table. Quantities investigated were atomization energies, dipole moments and structure parameters for Hartree-Fock, density functional theory and correlated methods, for which we had chosen M{\o}ller-Plesset perturbation theory as an example. Finally recommendations are given which type of basis set is used best for a certain level of theory and a desired quality of results.},
   doi        = {10.1039/B508541A},
-  file       = {http://www.ncbi.nlm.nih.gov/pubmed/16240044},
   pagination = {page}
 }
 
@@ -249,7 +247,7 @@
   journal   = {J. Chem. Phys.},
   title     = {Gaussian basis sets of quadruple zeta valence quality for atoms H{\textendash}Kr},
   year      = {2003},
-  month     = {dec},
+  month     = {12},
   number    = {24},
   pages     = {12753--12762},
   volume    = {119},
@@ -273,8 +271,8 @@
   doi     = {10.1063/1.456153}
 }
 
-% cc-pVXZ: only Al-Ar
-@article{cc-pvxz-al_ar,
+% cc-pVXZ and aug-cc-pVXZ: only Al-Ar
+@article{cc-pvxz-al_ar-1,
   author  = {Woon, David E. and Dunning, Thom H.},
   title   = {Gaussian basis sets for use in correlated molecular calculations. III. The atoms aluminum through argon},
   journal = {J. Chem. Phys.},
@@ -282,6 +280,21 @@
   pages   = {1358-1371},
   year    = {1993},
   doi     = {10.1063/1.464303}
+}
+
+% Fix for cc-pVXZ and aug-cc-pVXZ for Al-Ar, also new aug-cc-pVX(n+d)Z
+@article{cc-pvxz-al_ar-2,
+  author  = {Dunning, Thom H., Jr. and Peterson, Kirk A. and Wilson, Angela K.},
+  title   = {Gaussian basis sets for use in correlated molecular calculations. X. The atoms aluminum through argon revisited},
+  journal = {The Journal of Chemical Physics},
+  volume  = {114},
+  number  = {21},
+  pages   = {9244-9253},
+  year    = {2001},
+  month   = {06},
+  issn    = {0021-9606},
+  doi     = {10.1063/1.1367373},
+  url     = {https://doi.org/10.1063/1.1367373}
 }
 
 % aug-cc-pVXZ: only H, B-Ne
@@ -295,16 +308,40 @@
   doi     = {10.1063/1.462569}
 }
 
-% aug-cc-pVXZ: only Al-Ar
-@article{aug-cc-pvxz-al_ar,
-  author  = {Woon, David E. and Dunning, Thom H.},
-  title   = {Gaussian basis sets for use in correlated molecular calculations. III. The atoms aluminum through argon},
-  journal = {J. Chem. Phys.},
-  volume  = {98},
-  pages   = {1358-1371},
-  year    = {1993},
-  doi     = {10.1063/1.464303}
+% cc-pVXZ and aug-cc-pVXZ: transition metals
+@article{cc-pvdz-tm-1,
+  author  = {Balabanov, Nikolai B. and Peterson, Kirk A.},
+  title   = {Systematically convergent basis sets for transition metals. I. All-electron correlation consistent basis sets for the 3d elements Sc–Zn},
+  journal = {The Journal of Chemical Physics},
+  volume  = {123},
+  number  = {6},
+  pages   = {064107},
+  year    = {2005},
+  month   = {08},
+  issn    = {0021-9606},
+  doi     = {10.1063/1.1998907},
+  url     = {https://doi.org/10.1063/1.1998907}
 }
+@article{cc-pvdz-tm-2,
+  author  = {Balabanov, Nikolai B. and Peterson, Kirk A.},
+  title   = {Basis set limit electronic excitation energies, ionization potentials, and electron affinities for the 3d transition metal atoms: Coupled cluster and multireference methods},
+  journal = {The Journal of Chemical Physics},
+  volume  = {125},
+  number  = {7},
+  pages   = {074110},
+  year    = {2006},
+  month   = {08},
+  issn    = {0021-9606},
+  doi     = {10.1063/1.2335444},
+  url     = {https://doi.org/10.1063/1.2335444}
+}
+
+% Examples:
+% - cc-pVTZ: \cite{cc-pvxz}
+% - cc-pVTZ with S: \cite{cc-pvxz,cc-pvxz-al_ar-1,cc-pvxz-al_ar-2}
+% - aug-cc-pVTZ with S: \cite{cc-pvxz,cc-pvxz-al_ar-1,cc-pvxz-al_ar-2,aug-cc-pvxz}
+% - aug-cc-pVTZ for CuO: \cite{cc-pvxz,aug-cc-pvxz,cc-pvdz-tm-1,cc-pvdz-tm-2}
+% - aug-cc-pVTZ for CuS: \cite{cc-pvxz,cc-pvxz-al_ar-1,cc-pvxz-al_ar-2,aug-cc-pvxz,cc-pvdz-tm-1,cc-pvdz-tm-2}
 
 
 %-----------------------------------------------------------------------------
@@ -316,12 +353,71 @@
   journal   = {J. Chem. Theory Comput.},
   title     = {Segmented Contracted Basis Sets Optimized for Nuclear Magnetic Shielding},
   year      = {2014},
-  month     = {dec},
+  month     = {12},
   number    = {1},
   pages     = {132--138},
   volume    = {11},
   doi       = {10.1021/ct5009526},
   publisher = {American Chemical Society ({ACS})}
+}
+
+
+%-----------------------------------------------------------------------------
+%   RELATIVISTIC
+%-----------------------------------------------------------------------------
+
+@article{x2c-basis-1,
+  title     = {Segmented {{Contracted Error-Consistent Basis Sets}} of {{Double-}} and {{Triple-$\zeta$ Valence Quality}} for {{One-}} and {{Two-Component Relativistic All-Electron Calculations}}},
+  author    = {Pollak, Patrik and Weigend, Florian},
+  year      = {2017},
+  month     = {8},
+  journal   = {J. Chem. Theory Comput.},
+  volume    = {13},
+  number    = {8},
+  pages     = {3696--3705},
+  publisher = {American Chemical Society},
+  issn      = {1549-9618},
+  doi       = {10.1021/acs.jctc.7b00593},
+  urldate   = {2024-12-10},
+  abstract  = {Segmented contracted Gaussian basis sets optimized at the one-electron exact two-component (X2C) level -- including a finite size model for the nucleus -- are presented for elements up to Rn. These basis sets are counterparts for relativistic all-electron calculations to the Karlsruhe ``def2'' basis sets for nonrelativistic (H--Kr) or effective core potential based (Rb--Rn) treatments. For maximum consistency, the bases presented here were obtained from the latter by modification and reoptimization. Additionally we present extensions for self-consistent two-component calculations, required for the splitting of inner shells by spin--orbit coupling, and auxiliary basis sets for fitting the Coulomb part of the Fock matrix. Emphasis was put both on the accuracy of energies of atomic orbitals and on the accuracy of molecular properties. A large set of more than 300 molecules representing (nearly) all elements in their common oxidation states was used to assess the quality of the bases all across the periodic table.}
+}
+
+@article{x2c-basis-2,
+  title     = {Error-Consistent Segmented Contracted All-Electron Relativistic Basis Sets of Double- and Triple-Zeta Quality for {{NMR}} Shielding Constants},
+  author    = {Franzke, Yannick J. and Tre{\ss}, Robert and Pazdera, Tobias M. and Weigend, Florian},
+  year      = {2019},
+  month     = {7},
+  journal   = {Phys. Chem. Chem. Phys.},
+  volume    = {21},
+  number    = {30},
+  pages     = {16658--16664},
+  publisher = {The Royal Society of Chemistry},
+  issn      = {1463-9084},
+  doi       = {10.1039/C9CP02382H},
+  urldate   = {2024-12-10},
+  abstract  = {We present property-tailored all-electron relativistic Karlsruhe basis sets for the elements hydrogen to radon. The modifications described herein use at most four additional primitive basis functions and re-optimized contraction coefficients of the inner-most segment. Thus, the shielding constants are improved while maintaining the compactness of the basis set. A large set of 255 closed-shell molecules was used to assess the quality of the developed bases throughout the periodic table of elements.},
+  langid    = {english}
+}
+
+
+%-----------------------------------------------------------------------------
+%   STOs
+%-----------------------------------------------------------------------------
+
+@article{slater-basis-set,
+  title    = {Optimized {{Slater-type}} Basis Sets for the Elements 1--118},
+  author   = {Van Lenthe, E. and Baerends, E. J.},
+  year     = {2003},
+  journal  = {Journal of Computational Chemistry},
+  volume   = {24},
+  number   = {9},
+  pages    = {1142--1156},
+  issn     = {1096-987X},
+  doi      = {10.1002/jcc.10255},
+  urldate  = {2024-12-10},
+  abstract = {Seven different types of Slater type basis sets for the elements H (Z = 1) up to E118 (Z = 118), ranging from a double zeta valence quality up to a quadruple zeta valence quality, are tested in their performance in neutral atomic and diatomic oxide calculations. The exponents of the Slater type functions are optimized for the use in (scalar relativistic) zeroth-order regular approximated (ZORA) equations. Atomic tests reveal that, on average, the absolute basis set error of 0.03 kcal/mol in the density functional calculation of the valence spinor energies of the neutral atoms with the largest all electron basis set of quadruple zeta quality is lower than the average absolute difference of 0.16 kcal/mol in these valence spinor energies if one compares the results of ZORA equation with those of the fully relativistic Dirac equation. This average absolute basis set error increases to about 1 kcal/mol for the all electron basis sets of triple zeta valence quality, and to approximately 4 kcal/mol for the all electron basis sets of double zeta quality. The molecular tests reveal that, on average, the calculated atomization energies of 118 neutral diatomic oxides MO, where the nuclear charge Z of M ranges from Z = 1--118, with the all electron basis sets of triple zeta quality with two polarization functions added are within 1--2 kcal/mol of the benchmark results with the much larger all electron basis sets, which are of quadruple zeta valence quality with four polarization functions added. The accuracy is reduced to about 4--5 kcal/mol if only one polarization function is used in the triple zeta basis sets, and further reduced to approximately 20 kcal/mol if the all electron basis sets of double zeta quality are used. The inclusion of g-type STOs to the large benchmark basis sets had an effect of less than 1 kcal/mol in the calculation of the atomization energies of the group 2 and group 14 diatomic oxides. The basis sets that are optimized for calculations using the frozen core approximation (frozen core basis sets) have a restricted basis set in the core region compared to the all electron basis sets. On average, the use of these frozen core basis sets give atomic basis set errors that are approximately twice as large as the corresponding all electron basis set errors and molecular atomization energies that are close to the corresponding all electron results. Only if spin-orbit coupling is included in the frozen core calculations larger errors are found, especially for the heavier elements, due to the additional approximation that is made that the basis functions are orthogonalized on scalar relativistic core orbitals.},
+  langid   = {english},
+  keywords = {Slater type basis sets,Zeta quality,ZORA equation}
 }
 
 
@@ -386,30 +482,126 @@
 %   BASIS SET EXTRAPOLATION
 %-----------------------------------------------------------------------------
 
-@article{extrapolation-twopoint-coeffs,
+@article{extrapolate-scf-exp-1,
+  title    = {Basis-Set Convergence of the Energy in Molecular {{Hartree}}--{{Fock}} Calculations},
+  author   = {Halkier, Asger and Helgaker, Trygve and J{\o}rgensen, Poul and Klopper, Wim and Olsen, Jeppe},
+  year     = {1999},
+  month    = {3},
+  journal  = {Chemical Physics Letters},
+  volume   = {302},
+  number   = {5},
+  pages    = {437--446},
+  issn     = {0009-2614},
+  doi      = {10.1016/S0009-2614(99)00179-7},
+  urldate  = {2024-12-10},
+  abstract = {The basis-set convergence towards the numerical limit of the Hartree--Fock total energy and binding energy is investigated for the correlation-consistent cc-pVXZ basis sets. For both energies, solid improvements are obtained with each increment in X. The basis-set errors for the total energy ({$\Delta$}E) fit an exponential form better than a power form, and the total energy is better fitted than the binding energy. It is difficult to find generally reliable extrapolation schemes for the total energy. In most cases, the most successful scheme gives results extrapolated beyond a given X that are comparable to the cc-pV(X+1)Z results, but occasionally it fails dramatically for large X. Indeed, explicit calculation of the energy in a larger basis set, especially the cc-pV6Z set for which {$\Delta$}E{$\leq$}0.1 mEh, gives the most reliable estimate of the basis-set limit.}
+}
+
+@article{extrapolate-scf-exp-2,
+  title      = {Comment on: ``{{Estimating}} the {{Hartree}}--{{Fock}} Limit from Finite Basis Set Calculations'' [{{Jensen F}} (2005) {{Theor Chem Acc}} 113:267]},
+  shorttitle = {Comment On},
+  author     = {Karton, Amir and Martin, Jan M. L.},
+  year       = {2006},
+  month      = {4},
+  journal    = {Theor Chem Acc},
+  volume     = {115},
+  number     = {4},
+  pages      = {330--333},
+  issn       = {1432-2234},
+  doi        = {10.1007/s00214-005-0028-6},
+  urldate    = {2024-12-10},
+  abstract   = {We demonstrate that a minor modification of the extrapolation proposed by Jensen [(2005): Theor Chem Acc 113: 267] yields very reliable estimates of the Hartree--Fock limit in conjunction with correlation consistent basis sets. Specifically, a two-point extrapolation of the form\$\$E\_\{\{{\textbackslash}rm HF\},L\} = E\_\{\{{\textbackslash}rm HF\},{\textbackslash}infty\} + A(L + 1){\textbackslash}exp (- 9\{{\textbackslash}sqrt \{L\}\})\$\$yields HF limits EHF,{$\infty$} with an RMS error of 0.1~millihartree using aug-cc-pVQZ and aug-cc-pV5Z basis sets, and of 0.01~millihartree using aug-cc-pV5Z and aug-cc-pV6Z basis sets.},
+  langid     = {english},
+  keywords   = {Basis set convergence,Correlation-consistent basis sets,Extrapolation formulas,Hartree-Fock limit}
+}
+
+@article{extrapolate-scf-exp-3,
+  title    = {Uniformly Convergent N-Tuple-{$\zeta$} Augmented Polarized ({{nZaP}}) Basis Sets for Complete Basis Set Extrapolations. {{I}}. {{Self-consistent}} Field Energies},
+  author   = {Zhong, Shijun and Barnes, Ericka C. and Petersson, George A.},
+  year     = {2008},
+  month    = {11},
+  journal  = {The Journal of Chemical Physics},
+  volume   = {129},
+  number   = {18},
+  pages    = {184116},
+  issn     = {0021-9606},
+  doi      = {10.1063/1.3009651},
+  urldate  = {2024-12-10},
+  abstract = {We present a sequence of n-tuple-{$\zeta$} augmented polarized (nZaP) basis sets designed for extrapolations of both self-consistent field (SCF) and correlation energies to the complete basis set (CBS) limit. These nZaP basis sets (n=2--6) are formulated to give consistent errors throughout the Periodic Table (e.g., a consistent of {$\sim$}1{\enspace}mhartree/electron error for the 2ZaP SCF energy and a consistent of {$\sim$}1.4{\enspace}{$\mu$}hartree/electron error for the 6ZaP SCF energy). The SCF energy exhibits systematic convergence to the CBS limit: ESCF(nZaP){$\approx$}ESCF(CBS)+Ae-an. A single parameter, a=6.30, describes the 2ZaP through 6ZaP errors of H through Xe within 10\%. The SCF rms basis set truncation errors of H through Xe are 33.5mEh, 4.58mEh, 0.82mEh, 0.18mEh, and 0.047mEh for 2ZaP, 3ZaP, 4ZaP, 5ZaP, and 6ZaP, respectively. Linear extrapolations of the (2,3)ZaP, (3,4)ZaP, (4,5)ZaP, and (5,6)ZaP calculations (all with a=6.30) reduce these errors by an order of magnitude to 0.24mEh, 0.056mEh, 0.020mEh, and 0.005mEh, respectively. A test set of 34 atoms, ions, and molecules gives similar results, and the associated test set of 25 chemical energy differences also gives comparable absolute accuracy. However, the cancellation of errors between reactant and product is lost by extrapolation. As a result, these chemical energy differences show a more modest two-to-fourfold improvement with extrapolation.}
+}
+
+@article{extrapolation-corr-cubic-1,
+  title    = {Basis-Set Convergence of Correlated Calculations on Water},
+  author   = {Helgaker, Trygve and Klopper, Wim and Koch, Henrik and Noga, Jozef},
+  year     = {1997},
+  month    = {6},
+  journal  = {The Journal of Chemical Physics},
+  volume   = {106},
+  number   = {23},
+  pages    = {9639--9646},
+  issn     = {0021-9606},
+  doi      = {10.1063/1.473863},
+  urldate  = {2024-12-10},
+  abstract = {The basis-set convergence of the electronic correlation energy in the water molecule is investigated at the second-order Mo/ller--Plesset level and at the coupled-cluster singles-and-doubles level with and without perturbative triples corrections applied. The basis-set limits of the correlation energy are established to within 2\,mEh by means of (1) extrapolations from sequences of calculations using correlation-consistent basis sets and (2) from explicitly correlated calculations employing terms linear in the interelectronic distances rij. For the extrapolations to the basis-set limit of the correlation energies, fits of the form a+bX-3 (where X is two for double-zeta sets, three for triple-zeta sets, etc.) are found to be useful. CCSD(T) calculations involving as many as 492 atomic orbitals are reported.}
+}
+
+@article{extrapolation-corr-cubic-2,
+  title    = {Basis-Set Convergence in Correlated Calculations on {{Ne}}, {{N2}}, and {{H2O}}},
+  author   = {Halkier, Asger and Helgaker, Trygve and J{\o}rgensen, Poul and Klopper, Wim and Koch, Henrik and Olsen, Jeppe and Wilson, Angela K.},
+  year     = {1998},
+  month    = {4},
+  journal  = {Chemical Physics Letters},
+  volume   = {286},
+  number   = {3},
+  pages    = {243--252},
+  issn     = {0009-2614},
+  doi      = {10.1016/S0009-2614(98)00111-0},
+  urldate  = {2024-12-10},
+  abstract = {Valence and all-electron correlation energies of Ne, N2, and H2O at fixed experimental geometries are computed at the levels of second-order perturbation theory (MP2) and coupled cluster theory with singles and doubles excitations (CCSD), and singles and doubles excitations with a perturbative triples correction (CCSD(T)). Correlation-consistent polarized valence and core-valence basis sets up to sextuple zeta quality are employed. Guided by basis-set limits established by rij-dependent methods, a number of extrapolation schemes for use with the correlation-consistent basis sets are investigated. Among the schemes considered here, a linear least-squares procedure applied to the quintuple and sextuple zeta results yields the most accurate extrapolations.}
+}
+
+@article{extrapolation-schwenke-formula,
+  title      = {The Extrapolation of One-Electron Basis Sets in Electronic Structure Calculations: {{How}} It Should Work and How It Can Be Made to Work},
+  shorttitle = {The Extrapolation of One-Electron Basis Sets in Electronic Structure Calculations},
+  author     = {Schwenke, David W.},
+  year       = {2004},
+  month      = {12},
+  journal    = {The Journal of Chemical Physics},
+  volume     = {122},
+  number     = {1},
+  pages      = {014107},
+  issn       = {0021-9606},
+  doi        = {10.1063/1.1824880},
+  urldate    = {2024-12-10},
+  abstract   = {We consider the extrapolation of the one-electron basis to the basis set limit in the context of coupled cluster calculations. We produce extrapolation coefficients that produce much more accurate results than previous extrapolation forms. These are determined by fitting to accurate benchmark results. For coupled cluster singles doubles energies, we take our benchmark results from the work of Klopper that explicitly includes the interelectronic distance. For the perturbative triples energies, our benchmark results are obtained from large even-tempered basis set calculations.}
+}
+
+@article{extrapolation-truhlar,
+  title    = {Basis-Set Extrapolation},
+  author   = {Truhlar, Donald G.},
+  year     = {1998},
+  month    = {9},
+  journal  = {Chemical Physics Letters},
+  volume   = {294},
+  number   = {1},
+  pages    = {45--48},
+  issn     = {0009-2614},
+  doi      = {10.1016/S0009-2614(98)00866-5},
+  urldate  = {2024-12-10},
+  abstract = {A proposal for extrapolation of correlated electronic structure calculations based on correlation-consistent polarized double- and triple-zeta basis sets is evaluated. Optimum exponents are presented for separately extrapolating the Hartree--Fock and correlation energies, and the method is shown to yield energies that are more accurate than those from straight correlation-consistent polarized sextuple-zeta calculations at less than 1\% of the cost. For the test problems, the root-mean-square deviations from the complete basis limit are 1.3--2.4 kcal/mol for the extrapolated calculations and 3.0--4.4 kcal/mol for the polarized sextuple-zeta calculations.}
+}
+
+@article{extrapolation-coeffs-neese,
   author    = {Frank Neese and Edward F. Valeev},
   journal   = {J. Chem. Theory Comput.},
   title     = {Revisiting the Atomic Natural Orbital Approach for Basis Sets: Robust Systematic Basis Sets for Explicitly Correlated and Conventional Correlated ab initio Methods?},
   year      = {2010},
-  month     = {dec},
+  month     = {12},
   number    = {1},
   pages     = {33--43},
   volume    = {7},
   doi       = {10.1021/ct100396y},
   publisher = {American Chemical Society ({ACS})}
-}
-
-@article{extrapolation-truhlar,
-  author    = {Donald G. Truhlar},
-  journal   = {Chem. Phys. Lett.},
-  title     = {Basis-set extrapolation},
-  year      = {1998},
-  month     = {9},
-  number    = {1-3},
-  pages     = {45--48},
-  volume    = {294},
-  doi       = {10.1016/s0009-2614(98)00866-5},
-  publisher = {Elsevier {BV}}
 }
 
 @article{cbs-star,
@@ -439,4 +631,33 @@
   volume    = {127},
   doi       = {10.1063/1.2770708},
   publisher = {American Institute of Physics}
+}
+
+
+%-----------------------------------------------------------------------------
+%   ECPs
+%-----------------------------------------------------------------------------
+
+@article{def2-ecp,
+  title   = {Energy-Adjusted Ab Initio Pseudopotentials for the Second and Third Row Transition Elements},
+  author  = {Andrae, D. and H{\"a}u{\ss}ermann, U. and Dolg, M. and Stoll, H. and Preu{\ss}, H.},
+  year    = {1990},
+  journal = {Theor. Chim. Acta},
+  volume  = {77},
+  number  = {2},
+  pages   = {123--141},
+  doi     = {10.1007/BF01114537},
+  issn    = {0040-5744, 1432-2234}
+}
+@article{def2-ecp-2,
+  title   = {{Systematically Convergent Basis Sets with Relativistic Pseudopotentials. {{II}}. {{Small}}-Core Pseudopotentials and Correlation Consistent Basis Sets for the Post-{\textit{d}} Group 16--18 Elements}},
+  author  = {Peterson, Kirk A. and Figgen, Detlev and Goll, Erich and Stoll, Hermann and Dolg, Michael},
+  year    = {2003},
+  month   = {12},
+  journal = {J. Chem. Phys.},
+  volume  = {119},
+  number  = {21},
+  pages   = {11113--11123},
+  doi     = {10.1063/1.1622924},
+  issn    = {0021-9606, 1089-7690}
 }

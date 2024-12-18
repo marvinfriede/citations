@@ -38,7 +38,7 @@ sed -i -e 's/Advances in Physics X/Adv. Phys. X/I' **/*.bib
 sed -i -e 's/Advances in Polymer Science/Adv. Polym. Sci./I' **/*.bib
 sed -i -e 's/Advances in Science and Technology/Adv. Sci. Technol./I' **/*.bib
 sed -i -e 's/AIChE Journal/AIChE J./I' **/*.bib
-# 
+#
 sed -i -e 's/Angewandte Chemie International Edition/Angew. Chem., Int. Ed./I' **/*.bib
 sed -i -e 's/Angewandte Chemie/Angew. Chem./I' **/*.bib
 sed -i -e 's/Annual Review of Materials Research/Annu. Rev. Mater. Res./I' **/*.bib

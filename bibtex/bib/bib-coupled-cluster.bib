@@ -1,0 +1,441 @@
+%-----------------------------------------------------------------------------
+%   FUNDAMENTAL: Coupled Cluster
+%-----------------------------------------------------------------------------
+
+@article{coupled-cluster,
+  title    = {On the {{Correlation Problem}} in {{Atomic}} and {{Molecular Systems}}. {{Calculation}} of {{Wavefunction Components}} in {{Ursell-Type Expansion Using Quantum-Field Theoretical Methods}}},
+  author   = {{\v C}{\'i}{\v z}ek, Ji{\v r}{\'i}},
+  year     = {1966},
+  month    = {12},
+  journal  = {J. Chem. Phys.},
+  volume   = {45},
+  number   = {11},
+  pages    = {4256--4266},
+  issn     = {0021-9606, 1089-7690},
+  doi      = {10.1063/1.1727484},
+  urldate  = {2023-10-31},
+  abstract = {A method is suggested for the calculation of the matrix elements of the logarithm of an operator which gives the exact wavefunction when operating on the wavefunction in the one-electron approximation. The method is based on the use of the creation and annihilation operators, hole\textemdash particle formalism, Wick's theorem, and the technique of Feynman-like diagrams. The connection of this method with the configuration-interaction method as well as with the perturbation theory in the quantum-field theoretical form is discussed. The method is applied to the simple models of nitrogen and benzene molecules. The results are compared with those obtained with the configuration-interaction method considering all possible configurations within the chosen basis of one-electron functions.},
+  langid   = {english}
+}
+
+@article{ccsd-t,
+  title    = {A Fifth-Order Perturbation Comparison of Electron Correlation Theories},
+  author   = {Raghavachari, Krishnan and Trucks, Gary W. and Pople, John A. and {Head-Gordon}, Martin},
+  year     = {1989},
+  month    = {5},
+  journal  = {Chem. Phys. Lett.},
+  volume   = {157},
+  number   = {6},
+  pages    = {479--483},
+  issn     = {0009-2614},
+  doi      = {10.1016/S0009-2614(89)87395-6},
+  urldate  = {2023-10-31},
+  abstract = {Electron correlation theories such as configuration interaction (CI), coupled-cluster theory (CC), and quadratic configuration interaction (QCI) are assessed by means of a M\"oller-Plesset perturbation expansion of the correlation energy up to fifth order. The computational efficiencies and relative merits of the different techniques are outlined. A new augmented version of coupled-cluster theory, denoted as CCSD(T), is proposed to remedy some of the deficiencies of previous augmented coupled-cluster models.}
+}
+
+
+%-----------------------------------------------------------------------------
+%   DLPNO
+%-----------------------------------------------------------------------------
+
+@article{dlpno-ccsdt-1,
+  title    = {Efficient and Accurate Approximations to the Local Coupled Cluster Singles Doubles Method Using a Truncated Pair Natural Orbital Basis},
+  author   = {Neese, Frank and Hansen, Andreas and Liakos, Dimitrios G.},
+  year     = {2009},
+  month    = {8},
+  journal  = {The Journal of Chemical Physics},
+  volume   = {131},
+  number   = {6},
+  pages    = {064103},
+  issn     = {0021-9606},
+  doi      = {10.1063/1.3173827},
+  urldate  = {2024-12-13},
+  abstract = {A production level implementation of the closed-shell local quadratic configuration interaction and coupled cluster methods with single and double excitations (QCISD and CCSD) based on the concept of pair natural orbitals [local pair natural orbital LPNO-QCISD and LPNO-CCSD) is reported, evaluated, and discussed. This work is an extension of the earlier developed LPNO coupled-electron pair approximation (LNPO-CEPA) method [F. Neese et al., Chem. Phys.\hphantom{,}130, 114108 (2009)] and makes extended use of the resolution of the identity (RI) or density fitting (DF) approximation. Two variants of each method are compared. The less accurate approximations (LPNO2-QCISD/LPNO2-CCSD) still recover 98.7\%--99.3\% of the correlation energy in the given basis and have modest disk space requirements. The more accurate variants (LPNO1-QCISD/LPNO1-CCSD) typically recover 99.75\%--99.95\% of the correlation energy in the given basis but require the Coulomb and exchange operators with up to two-external indices to be stored on disk. Both variants have comparable computational efficiency. The convergence of the results with respect to the natural orbital truncation parameter (TCutPNO) has been studied. Extended numerical tests have been performed on absolute and relative correlation energies as function of basis set size and TCutPNO as well as on reaction energies, isomerization energies, and weak intermolecular interactions. The results indicate that the errors of the LPNO methods compared to the canonical QCISD and CCSD methods are below 1 kcal/mol with our default thresholds. Finally, some calculations on larger molecules are reported (ranging from 40--86 atoms) and it is shown that for medium sized molecules the total wall clock time required to complete the LPNO-CCSD calculations is only two to four times that of the preceding self-consistent field (SCF). Thus these methods are highly suitable for large-scale computational chemistry applications. Since there are only three thresholds involved that have been given conservative default values, the methods can be confidentially used in a ``black-box'' fashion in the same way as their canonical counterparts.}
+}
+
+@article{dlpno-ccsdt-2,
+  title     = {Accurate {{Theoretical Chemistry}} with {{Coupled Pair Models}}},
+  author    = {Neese, Frank and Hansen, Andreas and Wennmohs, Frank and Grimme, Stefan},
+  year      = {2009},
+  month     = {5},
+  journal   = {Acc. Chem. Res.},
+  volume    = {42},
+  number    = {5},
+  pages     = {641--648},
+  publisher = {American Chemical Society},
+  issn      = {0001-4842},
+  doi       = {10.1021/ar800241t},
+  urldate   = {2024-12-13},
+  abstract  = {Quantum chemistry has found its way into the everyday work of many experimental chemists. Calculations can predict the outcome of chemical reactions, afford insight into reaction mechanisms, and be used to interpret structure and bonding in molecules. Thus, contemporary theory offers tremendous opportunities in experimental chemical research. However, even with present-day computers and algorithms, we cannot solve the many particle Schr{\"o}dinger equation exactly; inevitably some error is introduced in approximating the solutions of this equation. Thus, the accuracy of quantum chemical calculations is of critical importance. The affordable accuracy depends on molecular size and particularly on the total number of atoms: for orientation, ethanol has 9 atoms, aspirin 21 atoms, morphine 40 atoms, sildenafil 63 atoms, paclitaxel 113 atoms, insulin nearly 800 atoms, and quaternary hemoglobin almost 12,000 atoms. Currently, molecules with up to {$\sim$}10 atoms can be very accurately studied by coupled cluster (CC) theory, {$\sim$}100 atoms with second-order M{\o}ller-Plesset perturbation theory (MP2), {$\sim$}1000 atoms with density functional theory (DFT), and beyond that number with semiempirical quantum chemistry and force-field methods. The overwhelming majority of present-day calculations in the 100-atom range use DFT. Although these methods have been very successful in quantum chemistry, they do not offer a well-defined hierarchy of calculations that allows one to systematically converge to the correct answer. Recently a number of rather spectacular failures of DFT methods have been found-even for seemingly simple systems such as hydrocarbons, fueling renewed interest in wave function-based methods that incorporate the relevant physics of electron correlation in a more systematic way. Thus, it would be highly desirable to fill the gap between 10 and 100 atoms with highly correlated ab initio methods. We have found that one of the earliest (and now almost forgotten) of this class of methods, the coupled-electron pair approximation (CEPA), performs exceedingly well in chemical applications. In this Account, we examine the performance of CEPA in chemical applications. One attractive feature of CEPA, in addition to its surprising accuracy that surpasses that of DFT and MP2 theory, is a simplicity that allows for straightforward and very efficient approximations and extensions to be developed; these are much more difficult or even impossible with the more rigorous CC theory. Thus, approximate CEPA methods can be implemented efficiently enough to allow for calculations on molecules of 50-100 atoms, perhaps the most common range in contemporary chemical research.}
+}
+
+@article{dlpno-ccsdt-3,
+  title      = {Efficient and Accurate Local Approximations to Coupled-Electron Pair Approaches: {{An}} Attempt to Revive the Pair Natural Orbital Method},
+  shorttitle = {Efficient and Accurate Local Approximations to Coupled-Electron Pair Approaches},
+  author     = {Neese, Frank and Wennmohs, Frank and Hansen, Andreas},
+  year       = {2009},
+  month      = {3},
+  journal    = {The Journal of Chemical Physics},
+  volume     = {130},
+  number     = {11},
+  pages      = {114108},
+  issn       = {0021-9606},
+  doi        = {10.1063/1.3086717},
+  urldate    = {2024-12-13},
+  abstract   = {Coupled-electron pair approximations (CEPAs) and coupled-pair functionals (CPFs) have been popular in the 1970s and 1980s and have yielded excellent results for small molecules. Recently, interest in CEPA and CPF methods has been renewed. It has been shown that these methods lead to competitive thermochemical, kinetic, and structural predictions. They greatly surpass second order M{\o}ller--Plesset and popular density functional theory based approaches in accuracy and are intermediate in quality between CCSD and CCSD(T) in extended benchmark studies. In this work an efficient production level implementation of the closed shell CEPA and CPF methods is reported that can be applied to medium sized molecules in the range of 50--100 atoms and up to about 2000 basis functions. The internal space is spanned by localized internal orbitals. The external space is greatly compressed through the method of pair natural orbitals (PNOs) that was also introduced by the pioneers of the CEPA approaches. Our implementation also makes extended use of density fitting (or resolution of the identity) techniques in order to speed up the laborious integral transformations. The method is called local pair natural orbital CEPA (LPNO-CEPA) (LPNO-CPF). The implementation is centered around the concepts of electron pairs and matrix operations. Altogether three cutoff parameters are introduced that control the size of the significant pair list, the average number of PNOs per electron pair, and the number of contributing basis functions per PNO. With the conservatively chosen default values of these thresholds, the method recovers about 99.8\% of the canonical correlation energy. This translates to absolute deviations from the canonical result of only a few kcal\,mol-1. Extended numerical test calculations demonstrate that LPNO-CEPA (LPNO-CPF) has essentially the same accuracy as parent CEPA (CPF) methods for thermochemistry, kinetics, weak interactions, and potential energy surfaces but is up to 500 times faster. The method performs best in conjunction with large and flexible basis sets. These results open the way for large-scale chemical applications.}
+}
+
+@article{dlpno-ccsdt-4,
+  title    = {Efficient and Accurate Local Single Reference Correlation Methods for High-Spin Open-Shell Molecules Using Pair Natural Orbitals},
+  author   = {Hansen, Andreas and Liakos, Dimitrios G. and Neese, Frank},
+  year     = {2011},
+  month    = {12},
+  journal  = {The Journal of Chemical Physics},
+  volume   = {135},
+  number   = {21},
+  pages    = {214102},
+  issn     = {0021-9606},
+  doi      = {10.1063/1.3663855},
+  urldate  = {2024-12-13},
+  abstract = {A production level implementation of the high-spin open-shell (spin unrestricted) single reference coupled pair, quadratic configuration interaction and coupled cluster methods with up to doubly excited determinants in the framework of the local pair natural orbital (LPNO) concept is reported. This work is an extension of the closed-shell LPNO methods developed earlier [F. Neese, F. Wennmohs, and A. Hansen, J. Chem. Phys.\hphantom{,}130, 114108 (2009)10.1063/1.3086717;\hphantom{,}F. Neese, A. Hansen, and D. G. Liakos, J. Chem. Phys.\hphantom{,}131, 064103 (2009)10.1063/1.3173827]. The internal space is spanned by localized orbitals, while the external space for each electron pair is represented by a truncated PNO expansion. The laborious integral transformation associated with the large number of PNOs becomes feasible through the extensive use of density fitting (resolution of the identity (RI)) techniques. Technical complications arising for the open-shell case and the use of quasi-restricted orbitals for the construction of the reference determinant are discussed in detail. As in the closed-shell case, only three cutoff parameters control the average number of PNOs per electron pair, the size of the significant pair list, and the number of contributing auxiliary basis functions per PNO. The chosen threshold default values ensure robustness and the results of the parent canonical methods are reproduced to high accuracy. Comprehensive numerical tests on absolute and relative energies as well as timings consistently show that the outstanding performance of the LPNO methods carries over to the open-shell case with minor modifications. Finally, hyperfine couplings calculated with the variational LPNO-CEPA/1 method, for which a well-defined expectation value type density exists, indicate the great potential of the LPNO approach for the efficient calculation of molecular properties.}
+}
+
+@article{dlpno-ccsdt-5,
+  title     = {Weak {{Molecular Interactions Studied}} with {{Parallel Implementations}} of the {{Local Pair Natural Orbital Coupled Pair}} and {{Coupled Cluster Methods}}},
+  author    = {Liakos, Dimitrios G. and Hansen, Andreas and Neese, Frank},
+  year      = {2011},
+  month     = {1},
+  journal   = {J. Chem. Theory Comput.},
+  volume    = {7},
+  number    = {1},
+  pages     = {76--87},
+  publisher = {American Chemical Society},
+  issn      = {1549-9618},
+  doi       = {10.1021/ct100445s},
+  urldate   = {2024-12-13},
+  abstract  = {A parallel implementation of the recently developed local pair natural orbital coupled electron pair approximation (LPNO-CEPA/n, n = Version 1, 2, or 3) and the corresponding LPNO coupled cluster method with single- and double excitations (LPNO-CCSD) is described. A detailed analysis alongside pseudocode is presented for the most important computational steps. The scaling with respect to the number of processors is reasonable and speedups of about 10 with 14 processors have been found in benchmark calculations (wall-clock time). The most important factor limiting the efficiency of the scaling with respect to the number of processors is probably the limited bandwidth of the presently prevailing multicore machines. The parallel LPNO methods were applied to study weak intermolecular interactions. Initially, the well-established S22 set of molecules was studied. The mean absolute error resulting from the use of the LPNO-CEPA/1 method relative to the most recent CCSD(T) reference data is found to be 0.24 kcal/mol. Thus, LPNO-CEPA/1 holds great promise for the efficient ab initio treatment of weak intermolecular interactions. In order to demonstrate the applicability of the methods to real systems, a two-dimensional potential energy surface for a trimer of 2,4-dihydroxy-3-acetyl-6-methyl acetophenone [C11H12O4] (81 atoms, 1296 basis functions, 133 single points) has been calculated with the LPNO-CEPA/1 method. In this system, a clear distinction can be made between hydrogen bonding and {$\pi-\pi$} interactions. The global minimum on the PES obtained from the calculations agrees excellently with the experimentally determined crystal structure. By contrast, popular density functional methods show no discernible minimum.}
+}
+
+@article{dlpno-ccsdt-6,
+  title    = {An Efficient and near Linear Scaling Pair Natural Orbital Based Local Coupled Cluster Method},
+  author   = {Riplinger, Christoph and Neese, Frank},
+  year     = {2013},
+  month    = {1},
+  journal  = {The Journal of Chemical Physics},
+  volume   = {138},
+  number   = {3},
+  pages    = {034106},
+  issn     = {0021-9606},
+  doi      = {10.1063/1.4773581},
+  urldate  = {2024-12-13},
+  abstract = {In previous publications, it was shown that an efficient local coupled cluster method with single- and double excitations can be based on the concept of pair natural orbitals (PNOs) [F. Neese, A. Hansen, and D. G. Liakos, J. Chem. Phys.\hphantom{,}131, 064103 (2009)10.1063/1.3173827]. The resulting local pair natural orbital-coupled-cluster single double (LPNO-CCSD) method has since been proven to be highly reliable and efficient. For large molecules, the number of amplitudes to be determined is reduced by a factor of 105--106 relative to a canonical CCSD calculation on the same system with the same basis set. In the original method, the PNOs were expanded in the set of canonical virtual orbitals and single excitations were not truncated. This led to a number of fifth order scaling steps that eventually rendered the method computationally expensive for large molecules (e.g., \&gt;100 atoms). In the present work, these limitations are overcome by a complete redesign of the LPNO-CCSD method. The new method is based on the combination of the concepts of PNOs and projected atomic orbitals (PAOs). Thus, each PNO is expanded in a set of PAOs that in turn belong to a given electron pair specific domain. In this way, it is possible to fully exploit locality while maintaining the extremely high compactness of the original LPNO-CCSD wavefunction. No terms are dropped from the CCSD equations and domains are chosen conservatively. The correlation energy loss due to the domains remains below \&lt;0.05\%, which implies typically 15--20 but occasionally up to 30 atoms per domain on average. The new method has been given the acronym DLPNO-CCSD (``domain based LPNO-CCSD''). The method is nearly linear scaling with respect to system size. The original LPNO-CCSD method had three adjustable truncation thresholds that were chosen conservatively and do not need to be changed for actual applications. In the present treatment, no additional truncation parameters have been introduced. Any additional truncation is performed on the basis of the three original thresholds. There are no real-space cutoffs. Single excitations are truncated using singles-specific natural orbitals. Pairs are prescreened according to a multipole expansion of a pair correlation energy estimate based on local orbital specific virtual orbitals (LOSVs). Like its LPNO-CCSD predecessor, the method is completely of black box character and does not require any user adjustments. It is shown here that DLPNO-CCSD is as accurate as LPNO-CCSD while leading to computational savings exceeding one order of magnitude for larger systems. The largest calculations reported here featured \&gt;8800 basis functions and \&gt;450 atoms. In all larger test calculations done so far, the LPNO-CCSD step took less time than the preceding Hartree-Fock calculation, provided no approximations have been introduced in the latter. Thus, based on the present development reliable CCSD calculations on large molecules with unprecedented efficiency and accuracy are realized.}
+}
+
+@article{dlpno-ccsdt-7,
+  title    = {Natural Triple Excitations in Local Coupled Cluster Calculations with Pair Natural Orbitals},
+  author   = {Riplinger, Christoph and Sandhoefer, Barbara and Hansen, Andreas and Neese, Frank},
+  year     = {2013},
+  month    = {10},
+  journal  = {The Journal of Chemical Physics},
+  volume   = {139},
+  number   = {13},
+  pages    = {134101},
+  issn     = {0021-9606},
+  doi      = {10.1063/1.4821834},
+  urldate  = {2024-12-13},
+  abstract = {In this work, the extension of the previously developed domain based local pair-natural orbital (DLPNO) based singles- and doubles coupled cluster (DLPNO-CCSD) method to perturbatively include connected triple excitations is reported. The development is based on the concept of triples-natural orbitals that span the joint space of the three pair natural orbital (PNO) spaces of the three electron pairs that are involved in the calculation of a given triple-excitation contribution. The truncation error is very smooth and can be significantly reduced through extrapolation to the zero threshold. However, the extrapolation procedure does not improve relative energies. The overall computational effort of the method is asymptotically linear with the system size O(N). Actual linear scaling has been confirmed in test calculations on alkane chains. The accuracy of the DLPNO-CCSD(T) approximation relative to semicanonical CCSD(T0) is comparable to the previously developed DLPNO-CCSD method relative to canonical CCSD. Relative energies are predicted with an average error of approximately 0.5 kcal/mol for a challenging test set of medium sized organic molecules. The triples correction typically adds 30\%--50\% to the overall computation time. Thus, very large systems can be treated on the basis of the current implementation. In addition to the linear C150H302 (452 atoms, \&gt;8800 basis functions) we demonstrate the first CCSD(T) level calculation on an entire protein, Crambin with 644 atoms, and more than 6400 basis functions.}
+}
+
+@article{dlpno-ccsdt-8,
+  title    = {Sparse Maps---{{A}} Systematic Infrastructure for Reduced-Scaling Electronic Structure Methods. {{II}}. {{Linear}} Scaling Domain Based Pair Natural Orbital Coupled Cluster Theory},
+  author   = {Riplinger, Christoph and Pinski, Peter and Becker, Ute and Valeev, Edward F. and Neese, Frank},
+  year     = {2016},
+  month    = {1},
+  journal  = {The Journal of Chemical Physics},
+  volume   = {144},
+  number   = {2},
+  pages    = {024109},
+  issn     = {0021-9606},
+  doi      = {10.1063/1.4939030},
+  urldate  = {2024-12-13},
+  abstract = {Domain based local pair natural orbital coupled cluster theory with single-, double-, and perturbative triple excitations (DLPNO-CCSD(T)) is a highly efficient local correlation method. It is known to be accurate and robust and can be used in a black box fashion in order to obtain coupled cluster quality total energies for large molecules with several hundred atoms. While previous implementations showed near linear scaling up to a few hundred atoms, several nonlinear scaling steps limited the applicability of the method for very large systems. In this work, these limitations are overcome and a linear scaling DLPNO-CCSD(T) method for closed shell systems is reported. The new implementation is based on the concept of sparse maps that was introduced in Part I of this series [P. Pinski, C. Riplinger, E. F. Valeev, and F. Neese, J. Chem. Phys. 143, 034108 (2015)]. Using the sparse map infrastructure, all essential computational steps (integral transformation and storage, initial guess, pair natural orbital construction, amplitude iterations, triples correction) are achieved in a linear scaling fashion. In addition, a number of additional algorithmic improvements are reported that lead to significant speedups of the method. The new, linear-scaling DLPNO-CCSD(T) implementation typically is 7 times faster than the previous implementation and consumes 4 times less disk space for large three-dimensional systems. For linear systems, the performance gains and memory savings are substantially larger. Calculations with more than 20\,000 basis functions and 1000 atoms are reported in this work. In all cases, the time required for the coupled cluster step is comparable to or lower than for the preceding Hartree-Fock calculation, even if this is carried out with the efficient resolution-of-the-identity and chain-of-spheres approximations. The new implementation even reduces the error in absolute correlation energies by about a factor of two, compared to the already accurate previous implementation.}
+}
+
+@article{dlpno-ccsdt-9,
+  title      = {Treating {{Subvalence Correlation Effects}} in {{Domain Based Pair Natural Orbital Coupled Cluster Calculations}}: {{An Out-of-the-Box Approach}}},
+  shorttitle = {Treating {{Subvalence Correlation Effects}} in {{Domain Based Pair Natural Orbital Coupled Cluster Calculations}}},
+  author     = {Bistoni, Giovanni and Riplinger, Christoph and Minenkov, Yury and Cavallo, Luigi and Auer, Alexander A. and Neese, Frank},
+  year       = {2017},
+  month      = {7},
+  journal    = {J. Chem. Theory Comput.},
+  volume     = {13},
+  number     = {7},
+  pages      = {3220--3227},
+  publisher  = {American Chemical Society},
+  issn       = {1549-9618},
+  doi        = {10.1021/acs.jctc.7b00352},
+  urldate    = {2024-12-13},
+  abstract   = {The validity of the main approximations used in canonical and domain based pair natural orbital coupled cluster methods (CCSD(T) and DLPNO-CCSD(T), respectively) in standard chemical applications is discussed. In particular, we investigate the dependence of the results on the number of electrons included in the correlation treatment in frozen-core (FC) calculations and on the main threshold governing the accuracy of DLPNO all-electron (AE) calculations. Initially, scalar relativistic orbital energies for the ground state of the atoms from Li to Rn in the periodic table are calculated. An energy criterion is used for determining the orbitals that can be excluded from the correlation treatment in FC coupled cluster calculations without significant loss of accuracy. The heterolytic dissociation energy (HDE) of a series of metal compounds (LiF, NaF, AlF3, CaF2, CuF, GaF3, YF3, AgF, InF3, HfF4, and AuF) is calculated at the canonical CCSD(T) level, and the dependence of the results on the number of correlated electrons is investigated. Although for many of the studied reactions subvalence correlation effects contribute significantly to the HDE, the use of an energy criterion permits a conservative definition of the size of the core, allowing FC calculations to be performed in a black-box fashion while retaining chemical accuracy. A comparison of the CCSD and the DLPNO-CCSD methods in describing the core--core, core--valence, and valence--valence components of the correlation energy is given. It is found that more conservative thresholds must be used for electron pairs containing at least one core electron in order to achieve high accuracy in AE DLPNO-CCSD calculations relative to FC calculations. With the new settings, the DLPNO-CCSD method reproduces canonical CCSD results in both AE and FC calculations with the same accuracy.}
+}
+
+
+@article{dlpno-ccsdt-10,
+  title    = {A New Near-Linear Scaling, Efficient and Accurate, Open-Shell Domain-Based Local Pair Natural Orbital Coupled Cluster Singles and Doubles Theory},
+  author   = {Saitow, Masaaki and Becker, Ute and Riplinger, Christoph and Valeev, Edward F. and Neese, Frank},
+  year     = {2017},
+  month    = {4},
+  journal  = {The Journal of Chemical Physics},
+  volume   = {146},
+  number   = {16},
+  pages    = {164105},
+  issn     = {0021-9606},
+  doi      = {10.1063/1.4981521},
+  urldate  = {2024-12-13},
+  abstract = {The Coupled-Cluster expansion, truncated after single and double excitations (CCSD), provides accurate and reliable molecular electronic wave functions and energies for many molecular systems around their equilibrium geometries. However, the high computational cost, which is well-known to scale as O(N6) with system size N, has limited its practical application to small systems consisting of not more than approximately 20--30 atoms. To overcome these limitations, low-order scaling approximations to CCSD have been intensively investigated over the past few years. In our previous work, we have shown that by combining the pair natural orbital (PNO) approach and the concept of orbital domains it is possible to achieve fully linear scaling CC implementations (DLPNO-CCSD and DLPNO-CCSD(T)) that recover around 99.9\% of the total correlation energy [C. Riplinger et al., J. Chem. Phys. 144, 024109 (2016)]. The production level implementations of the DLPNO-CCSD and DLPNO-CCSD(T) methods were shown to be applicable to realistic systems composed of a few hundred atoms in a routine, black-box fashion on relatively modest hardware. In 2011, a reduced-scaling CCSD approach for high-spin open-shell unrestricted Hartree-Fock reference wave functions was proposed (UHF-LPNO-CCSD) [A. Hansen et al., J. Chem. Phys. 135, 214102 (2011)]. After a few years of experience with this method, a few shortcomings of UHF-LPNO-CCSD were noticed that required a redesign of the method, which is the subject of this paper. To this end, we employ the high-spin open-shell variant of the N-electron valence perturbation theory formalism to define the initial guess wave function, and consequently also the open-shell PNOs. The new PNO ansatz properly converges to the closed-shell limit since all truncations and approximations have been made in strict analogy to the closed-shell case. Furthermore, given the fact that the formalism uses a single set of orbitals, only a single PNO integral transformation is necessary, which offers large computational savings. We show that, with the default PNO truncation parameters, approximately 99.9\% of the total CCSD correlation energy is recovered for open-shell species, which is comparable to the performance of the method for closed-shells. UHF-DLPNO-CCSD shows a linear scaling behavior for closed-shell systems, while linear to quadratic scaling is obtained for open-shell systems. The largest systems we have considered contain more than 500 atoms and feature more than 10 000 basis functions with a triple-{$\zeta$} quality basis set.}
+}
+
+@article{dlpno-ccsdt-11-t1,
+  title      = {Communication: {{An}} Improved Linear Scaling Perturbative Triples Correction for the Domain Based Local Pair-Natural Orbital Based Singles and Doubles Coupled Cluster Method [{{DLPNO-CCSD}}({{T}})]},
+  shorttitle = {Communication},
+  author     = {Guo, Yang and Riplinger, Christoph and Becker, Ute and Liakos, Dimitrios G. and Minenkov, Yury and Cavallo, Luigi and Neese, Frank},
+  year       = {2018},
+  month      = {1},
+  journal    = {The Journal of Chemical Physics},
+  volume     = {148},
+  number     = {1},
+  pages      = {011101},
+  issn       = {0021-9606},
+  doi        = {10.1063/1.5011798},
+  urldate    = {2024-12-13},
+  abstract   = {In this communication, an improved perturbative triples correction (T) algorithm for domain based local pair-natural orbital singles and doubles coupled cluster (DLPNO-CCSD) theory is reported. In our previous implementation, the semi-canonical approximation was used and linear scaling was achieved for both the DLPNO-CCSD and (T) parts of the calculation. In this work, we refer to this previous method as DLPNO-CCSD(T0) to emphasize the semi-canonical approximation. It is well-established that the DLPNO-CCSD method can predict very accurate absolute and relative energies with respect to the parent canonical CCSD method. However, the (T0) approximation may introduce significant errors in absolute energies as the triples correction grows up in magnitude. In the majority of cases, the relative energies from (T0) are as accurate as the canonical (T) results of themselves. Unfortunately, in rare cases and in particular for small gap systems, the (T0) approximation breaks down and relative energies show large deviations from the parent canonical CCSD(T) results. To address this problem, an iterative (T) algorithm based on the previous DLPNO-CCSD(T0) algorithm has been implemented [abbreviated here as DLPNO-CCSD(T)]. Using triples natural orbitals to represent the virtual spaces for triples amplitudes, storage bottlenecks are avoided. Various carefully designed approximations ease the computational burden such that overall, the increase in the DLPNO-(T) calculation time over DLPNO-(T0) only amounts to a factor of about two (depending on the basis set). Benchmark calculations for the GMTKN30 database show that compared to DLPNO-CCSD(T0), the errors in absolute energies are greatly reduced and relative energies are moderately improved. The particularly problematic case of cumulene chains of increasing lengths is also successfully addressed by DLPNO-CCSD(T).}
+}
+
+@article{dlpno-ccsdt-12-t1,
+  title    = {Linear Scaling Perturbative Triples Correction Approximations for Open-Shell Domain-Based Local Pair Natural Orbital Coupled Cluster Singles and Doubles Theory [{{DLPNO-CCSD}}({{T}}/{{T}})]},
+  author   = {Guo, Yang and Riplinger, Christoph and Liakos, Dimitrios G. and Becker, Ute and Saitow, Masaaki and Neese, Frank},
+  year     = {2020},
+  month    = {1},
+  journal  = {The Journal of Chemical Physics},
+  volume   = {152},
+  number   = {2},
+  pages    = {024116},
+  issn     = {0021-9606},
+  doi      = {10.1063/1.5127550},
+  urldate  = {2024-12-13},
+  abstract = {The coupled cluster method with single-, double-, and perturbative triple excitations [CCSD(T)] is considered to be one of the most reliable quantum chemistry theories. However, the steep scaling of CCSD(T) has limited its application to small or medium-sized systems for a long time. In our previous work, the linear scaling domain based local pair natural orbital CCSD variant (DLPNO-CCSD) has been developed for closed-shell and open-shell. However, it is known from extensive benchmark studies that triple-excitation contributions are important to reach chemical accuracy. In the present work, two linear scaling (T) approximations for open-shell DLPNO-CCSD are implemented and compared: (a) an algorithm based on the semicanonical approximation, in which off-diagonal Fock matrix elements in the occupied space are neglected [referred to as DLPNO-(T0)]; and (b) an improved algorithm in which the triples amplitudes are computed iteratively [referred to as DLPNO-(T)]. This work is based on the previous open-shell DLPNO-CCSD algorithm [M. Saitow et al., J. Chem. Phys. 146, 164105 (2017)] as well as the iterative (T) correction for closed-shell systems [Y. Guo et al., J. Chem. Phys. 148, 011101 (2018)]. Our results show that the new open-shell perturbative corrections, DLPNO-(T0/T), can predict accurate absolute and relative correlation energies relative to the canonical reference calculations with the same basis set. The absolute energies from DLPNO-(T) are significantly more accurate than those of DLPNO-(T0). The additional computational effort of DLPNO-(T) relative to DLPNO-(T0) is a factor of 4 on average. We report calculations on systems with more than 4000 basis functions.}
+}
+
+
+%-----------------------------------------------------------------------------
+%   PNO-LCCSD (MOLPRO)
+%-----------------------------------------------------------------------------
+
+@article{pno-lccsdt-1,
+  title      = {Communication: {{Improved}} Pair Approximations in Local Coupled-Cluster Methods},
+  shorttitle = {Communication},
+  author     = {Schwilk, Max and Usvyat, Denis and Werner, Hans-Joachim},
+  year       = {2015},
+  month      = {3},
+  journal    = {The Journal of Chemical Physics},
+  volume     = {142},
+  number     = {12},
+  pages      = {121102},
+  issn       = {0021-9606},
+  doi        = {10.1063/1.4916316},
+  urldate    = {2024-12-13},
+  abstract   = {In local coupled cluster treatments the electron pairs can be classified according to the magnitude of their energy contributions or distances into strong, close, weak, and distant pairs. Different approximations are introduced for the latter three classes. In this communication, an improved simplified treatment of close and weak pairs is proposed, which is based on long-range cancellations of individually slowly decaying contributions in the amplitude equations. Benchmark calculations for correlation, reaction, and activation energies demonstrate that these approximations work extremely well, while pair approximations based on local second-order M{\o}ller-Plesset theory can lead to errors that are 1-2 orders of magnitude larger.}
+}
+
+@article{pno-lccsdt-2,
+  title      = {Communication: {{Multipole}} Approximations of Distant Pair Energies in Local Correlation Methods with Pair Natural Orbitals},
+  shorttitle = {Communication},
+  author     = {Werner, Hans-Joachim},
+  year       = {2016},
+  month      = {11},
+  journal    = {The Journal of Chemical Physics},
+  volume     = {145},
+  number     = {20},
+  pages      = {201101},
+  issn       = {0021-9606},
+  doi        = {10.1063/1.4968595},
+  urldate    = {2024-12-13},
+  abstract   = {The accuracy of multipole approximations for distant pair energies in local second-order M{\o}ller-Plesset perturbation theory (LMP2) as introduced by Hetzer et al. [Chem. Phys. Lett. 290, 143 (1998)] is investigated for three chemical reactions involving molecules with up to 92 atoms. Various iterative and non-iterative approaches are compared, using different energy thresholds for distant pair selection. It is demonstrated that the simple non-iterative dipole-dipole approximation, which has been used in several recent pair natural orbitals (PNO)-LMP2 and PNO-LCCSD (local coupled-cluster with singles and doubles) methods, may underestimate the distant pair energies by up to 50\% and can lead to significant errors in relative energies, unless very tight thresholds are used. The accuracy can be much improved by including higher multipole orders and by optimizing the distant pair amplitudes iteratively along with all other amplitudes. A new approach is presented in which very small special PNO domains for distant pairs are used in the iterative approach. This reduces the number of distant pair amplitudes by 3 orders of magnitude and keeps the additional computational effort for the iterative optimization of distant pair amplitudes minimal.}
+}
+
+@article{pno-lccsdt-3,
+  title     = {Scalable {{Electron Correlation Methods}}. 4. {{Parallel Explicitly Correlated Local Coupled Cluster}} with {{Pair Natural Orbitals}} ({{PNO-LCCSD-F12}})},
+  author    = {Ma, Qianli and Schwilk, Max and K{\"o}ppl, Christoph and Werner, Hans-Joachim},
+  year      = {2017},
+  month     = {10},
+  journal   = {J. Chem. Theory Comput.},
+  volume    = {13},
+  number    = {10},
+  pages     = {4871--4896},
+  publisher = {American Chemical Society},
+  issn      = {1549-9618},
+  doi       = {10.1021/acs.jctc.7b00799},
+  urldate   = {2024-12-13},
+  abstract  = {We present an efficient explicitly correlated pair natural orbital local coupled cluster (PNO-LCCSD-F12) method. The method is an extension of our previously reported PNO-LCCSD approach (Schwilk et al., J. Chem. Theory Comput. 2017, 13, 3650-3675). Near linear scaling with the molecular size is achieved by using pair, domain, and projection approximations, local density fitting and local resolution of the identity, and by exploiting the sparsity of the local molecular orbitals as well as of the projected atomic orbitals. The effect of the various domain approximations is tested for a wide range of chemical reactions and intermolecular interactions. In accordance with previous findings, it is demonstrated that the F12 terms significantly reduce the domain errors. The convergence of the reaction and interaction energies with respect to the parameters that determine the domain sizes and pair approximations is extensively tested. The results obtained with our default thresholds agree within a few tenths of a kcal mol--1 with the ones computed with very tight options. For cases where canonical calculations are still feasible, the relative energies of local and canonical calculations agree within similar error bounds. The PNO-LCCSD-F12 method needs only 25--40\% more computer time than a corresponding PNO-LCCSD calculation while greatly improving the accuracy. Our program is well parallelized and capable of computing accurate correlation energies for molecules with more than 150 atoms using augmented triple-{$\zeta$} basis sets and more than 5000 basis functions. Using several nodes of a small computer cluster, such calculations can be carried out within a few hours.}
+}
+
+@article{pno-lccsdt-4,
+  title     = {Scalable {{Electron Correlation Methods}}. 3. {{Efficient}} and {{Accurate Parallel Local Coupled Cluster}} with {{Pair Natural Orbitals}} ({{PNO-LCCSD}})},
+  author    = {Schwilk, Max and Ma, Qianli and K{\"o}ppl, Christoph and Werner, Hans-Joachim},
+  year      = {2017},
+  month     = {8},
+  journal   = {J. Chem. Theory Comput.},
+  volume    = {13},
+  number    = {8},
+  pages     = {3650--3675},
+  publisher = {American Chemical Society},
+  issn      = {1549-9618},
+  doi       = {10.1021/acs.jctc.7b00554},
+  urldate   = {2024-12-13},
+  abstract  = {A well-parallelized local singles and doubles coupled-cluster (LCCSD) method using pair natural virtual orbitals (PNOs) is presented. The PNOs are constructed using large domains of projected atomic orbitals (PAOs) and orbital specific virtual orbitals (OSVs). We introduce a hierarchy of close, weak, and distant pairs, based on pair energies evaluated by local M{\o}ller--Plesset perturbation theory (LMP2). In contrast to most previous implementations of LCCSD methods, the close and weak pairs are not approximated by LMP2 but treated by higher-order methods. This leads to greatly improved accuracy for large systems, in particular when long-range dispersion interactions are important. Close pair amplitudes are optimized using approximate LCCSD equations, in which slowly decaying terms that mutually cancel at long-range are neglected. For weak pairs, the same approximations are used, but in addition, the nonlinear terms are neglected (coupled electron pair approximation). Distant pairs are treated by spin-component scaled (SCS)-LMP2 using multipole approximations. For efficiency reasons, various projection approximations are also introduced. The impact of these approximations on absolute and relative energies depends on the PNO domain sizes. The errors are found to be negligible, provided that sufficiently large PNO domains are used for close and weak pairs. For the selection of these domains the usual natural orbital occupation number criterion is found to be insufficient, and an additional energy criterion is used. For extended one-dimensional systems, the computational effort of the method scales nearly linearly with the number of correlated electrons, but the linear scaling regime is usually not reached in real-life applications for three-dimensional systems. Nevertheless, due to the parallelization that is efficient up to about 100--200 CPU cores (dependent on the molecular size), accurate calculations for three-dimensional molecules with about 100 atoms and augmented triple-{$\zeta$} basis sets (e.g., cc-pVTZ-F12) can be carried out in 1--3 h of elapsed time (depending on the molecular structure and the number of CPU cores, excluding the time for Hartree--Fock). The convergence of the results with respect to the thresholds and options that control the domain, pair, and projection approximations is extensively tested. Benchmark examples for several difficult and large cases are presented, which demonstrate that the errors of relative energies (e.g., reaction energies, barrier heights) caused by the pair and projection approximations can be reduced to below 1 kJ mol--1. The remaining errors are mainly caused by the finite PAO domains. The larger these are made, the more intramolecular or intermolecular basis set superposition errors are introduced, and the canonical results are approached only very slowly. This problem is eliminated in the explicitly correlated variant of our method (PNO-LCCSD-F12), which will be described in a separate paper, along with a larger set of benchmark calculations.}
+}
+
+@article{pno-lccsdt-5,
+  title     = {Explicitly Correlated Local Coupled-Cluster Methods Using Pair Natural Orbitals},
+  author    = {Ma, Qianli and Werner, Hans-Joachim},
+  year      = {2018},
+  journal   = {WIREs Computational Molecular Science},
+  volume    = {8},
+  number    = {6},
+  pages     = {e1371},
+  issn      = {1759-0884},
+  doi       = {10.1002/wcms.1371},
+  urldate   = {2024-12-13},
+  abstract  = {Recently developed explicitly correlated local coupled-cluster methods [PNO-LCCSD(T)-F12] are reviewed. Extensive benchmarks for reaction energies and intermolecular interaction energies are presented, in which the convergence of the results with respect to all local approximations is studied. The explicit correlation treatment (F12) is shown to be essential to minimize basis set incompleteness errors, as well as errors caused by domain approximations. Generally, the errors of relative energies due to local approximations can be reduced to below 1 kcal/mol. The methods are well parallelized, and using small computer clusters with 100--200 computing cores, calculations for systems with 100--200 atoms using augmented triple-{$\zeta$} basis sets can be carried out within a few hours of elapsed time. Recommendations are made on how such calculations should be carried out, how the accuracy can be tested, and which computational resources are required. This article is categorized under: Electronic Structure Theory{$>$} Ab Initio Electronic Structure Methods Software{$>$} Quantum Chemistry},
+  copyright = {{\copyright} 2018 Wiley Periodicals, Inc.},
+  langid    = {english},
+  keywords  = {coupled cluster,explicit correlation,local correlation,pair natural orbitals}
+}
+
+@article{pno-lccsdt-6,
+  title     = {Scalable {{Electron Correlation Methods}}. 5. {{Parallel Perturbative Triples Correction}} for {{Explicitly Correlated Local Coupled Cluster}} with {{Pair Natural Orbitals}}},
+  author    = {Ma, Qianli and Werner, Hans-Joachim},
+  year      = {2018},
+  month     = {1},
+  journal   = {J. Chem. Theory Comput.},
+  volume    = {14},
+  number    = {1},
+  pages     = {198--215},
+  publisher = {American Chemical Society},
+  issn      = {1549-9618},
+  doi       = {10.1021/acs.jctc.7b01141},
+  urldate   = {2024-12-13},
+  abstract  = {A well-parallelized perturbative triples correction implementation for the pair natural orbital based coupled cluster method PNO-LCCSD(T)-F12 is presented. A composite approach is adopted in addressing the coupling due to off-diagonal Fock matrix elements, in which the local triples amplitudes are iteratively solved using small domains of triples natural orbitals, and a semicanonical (T0) domain correction with larger domains is applied to reduce the domain errors. This treatment adds only about 20\% to the computational cost of (T0) calculations with large domains, and the errors due to the use of small domains in the iterations are very small. In addition, a two-step triple list selection method is applied: First, an initial triple list is generated using LCCSD-F12 pair energy criteria, and the (T0) triples energies are computed using small domains. Second, this list is reduced by neglecting triples with small energy contributions, and the final calculation with large domains is only carried out for the reduced list. The cost of the (T) calculation scales asymptotically linear with the molecular size and shows excellent parallelization efficiency up to hundreds of CPU cores. The convergence of the (T) contribution to the relative energies of large molecular systems is carefully tested, and for most of the cases the results obtained with our default thresholds agree within {$\sim$}0.5 kcal mol--1 with those computed with very tight thresholds. For all tested molecular systems where canonical calculations are still feasible, the PNO-LCCSD(T)-F12 relative energies also agree within 0.5 kcal mol--1 with the canonical CCSD(T)-F12 results using the same F12 treatment. The (T) calculation generally takes 3--5 times the cost of the preceding PNO-LCCSD-F12 calculation, primarily due to the large number of triples required in obtaining accurate relative energies. We find that for large molecular systems the triple selection criteria used in previous local triples methods are insufficient, and a much larger number of triples are required than it was assumed so far. Still, using a commodity computer cluster, the PNO-LCCSD(T)-F12 calculation of molecules with {$\sim$}100 atoms using augmented triple-{$\zeta$} basis sets can be carried out in a few hours of elapsed time.}
+}
+
+@article{pno-lccsdt-7,
+  title     = {Accurate {{Intermolecular Interaction Energies Using Explicitly Correlated Local Coupled Cluster Methods}} [{{PNO-LCCSD}}({{T}})-{{F12}}]},
+  author    = {Ma, Qianli and Werner, Hans-Joachim},
+  year      = {2019},
+  month     = {2},
+  journal   = {J. Chem. Theory Comput.},
+  volume    = {15},
+  number    = {2},
+  pages     = {1044--1052},
+  publisher = {American Chemical Society},
+  issn      = {1549-9618},
+  doi       = {10.1021/acs.jctc.8b01098},
+  urldate   = {2024-12-13},
+  abstract  = {We present benchmark results for the A24, S66, and X40 sets of intermolecular interaction energies obtained with our recently developed PNO-LCCSD(T)-F12 method. Using the aug-cc-pVQZ-F12 basis set and tight domain options, the root-mean-square (RMSD) and maximum (MAXD) deviations from the currently best CCSD(T)/CBS estimates for the S66 set amount to only 0.02 and 0.06 kcal mol--1, respectively. The corresponding triple-{$\zeta$} (aug-cc-pVTZ-F12) results are similarly accurate, and even with double-{$\zeta$} (aug-cc-pVDZ-F12) basis sets the RMSD and MAXD deviations amount to only 0.05 and 0.11 kcal mol--1, respectively. Preliminary PNO-LCCSD(T)-F12 calculations on the X40 set of intermolecular interactions of halogenated molecules yield interaction energies in reasonable agreement with the original CCSD(T)/CBS estimates. The PNO-LCCSD(T)-F12 method does not rely on error cancellations as the popular {$\Delta$}CCSD(T) approach and can yield comparable or better accuracy at a fraction of the cost. This accuracy is of importance for studying reactions involving large molecules, in which intramolecular noncovalent interactions are important and no counterpoise corrections are possible.}
+}
+
+@article{pno-lccsdt-8,
+  title      = {Scalable {{Electron Correlation Methods}}. 7. {{Local Open-Shell Coupled-Cluster Methods Using Pair Natural Orbitals}}: {{PNO-RCCSD}} and {{PNO-UCCSD}}},
+  shorttitle = {Scalable {{Electron Correlation Methods}}. 7. {{Local Open-Shell Coupled-Cluster Methods Using Pair Natural Orbitals}}},
+  author     = {Ma, Qianli and Werner, Hans-Joachim},
+  year       = {2020},
+  month      = {5},
+  journal    = {J. Chem. Theory Comput.},
+  volume     = {16},
+  number     = {5},
+  pages      = {3135--3151},
+  publisher  = {American Chemical Society},
+  issn       = {1549-9618},
+  doi        = {10.1021/acs.jctc.0c00192},
+  urldate    = {2024-12-13},
+  abstract   = {We present well-parallelized local implementations of high-spin open-shell coupled cluster methods with single and double excitations (CCSD) using pair natural orbitals (PNOs). The methods are based on the spin-orbital coupled cluster theory using restricted open-shell Hartree--Fock (ROHF) reference functions. Two variants, namely, PNO-UCCSD and PNO-RCCSD are implemented and compared. In PNO-UCCSD, the coupled cluster amplitudes are spin-unrestricted, while in PNO-RCCSD the linear terms are spin-adapted by a spin-projection approach as described in J. Chem. Phys. 1993, 99, 5219-5227. Near linear scaling of the computational cost with the number of correlated electrons is achieved by applying domain and pair approximations. The PNOs are spin-independent and obtained using a semicanonical spin-restricted MP2 approximation with large domains of projected atomic orbitals (PAOs). The pair approximations of our previously described closed-shell PNO-LCCSD method are carefully revised so that they are compatible to the UCCSD theory, and PNO-UCCSD or PNO-RCCSD calculations for closed-shell molecules yield exactly the same results as corresponding spin-free closed-shell PNO-LCCSD calculations. The convergence of the results with respect to the thresholds and options that control the domain and pair approximations is demonstrated. It is found that large domains are required for the single excitations in open-shell calculations in order to obtain converged results. In general, the errors of relative energies caused by the local approximations can be reduced to below 1 kcal mol--1, even for difficult cases. Presently, PNO-RCCSD and PNO-UCCSD calculations for molecules with 100--200 atoms and augmented triple-{$\zeta$} basis sets can be carried out in a few hours of elapsed time using {$\sim$}100 CPU cores. In addition, the program is also capable of performing distinguishable cluster (PNO-RDCSD and PNO-UDCSC) calculations. The present work is a critical step in developing fully local open-shell PNO-RCCSD(T)-F12 methods.}
+}
+
+@article{pno-lccsdt-9,
+  title     = {Scalable {{Electron Correlation Methods}}. 8. {{Explicitly Correlated Open-Shell Coupled-Cluster}} with {{Pair Natural Orbitals PNO-RCCSD}}({{T}})-{{F12}} and {{PNO-UCCSD}}({{T}})-{{F12}}},
+  author    = {Ma, Qianli and Werner, Hans-Joachim},
+  year      = {2021},
+  month     = {2},
+  journal   = {J. Chem. Theory Comput.},
+  volume    = {17},
+  number    = {2},
+  pages     = {902--926},
+  publisher = {American Chemical Society},
+  issn      = {1549-9618},
+  doi       = {10.1021/acs.jctc.0c01129},
+  urldate   = {2024-12-13},
+  abstract  = {We present explicitly correlated open-shell pair natural orbital local coupled-cluster methods, PNO-RCCSD(T)-F12 and PNO-UCCSD(T)-F12. The methods are extensions of our previously reported PNO-R/UCCSD methods (J. Chem. Theory Comput., 2020, 16, 3135--3151, https://pubs.acs.org/doi/10.1021/acs.jctc.0c00192) with additions of explicit correlation and perturbative triples corrections. The explicit correlation treatment follows the spin-orbital CCSD-F12b theory using Ansatz 3*A, which is found to yield comparable or better basis set convergence than the more rigorous Ansatz 3C in computed ionization potentials and reaction energies using double- to quaduple-{$\zeta$} basis sets. The perturbative triples correction is adapted from the spin-orbital (T) theory to use triples natural orbitals (TNOs). To address the coupling due to off-diagonal Fock matrix elements, the local triples amplitudes are iteratively solved using small domains of TNOs, and a semicanonical (T0) domain correction with larger domains is applied to reduce the domain errors. The performance of the methods is demonstrated through benchmark calculations on ionization potentials, radical stabilization energies, reaction energies of fragmentations and rearrangements in radical cations, and spin-state energy differences of iron complexes. For a few test sets where canonical calculations are feasible, PNO-RCCSD(T)-F12 results agree with the canonical ones to within 0.4 kcal mol--1, and this maximum error is reduced to below 0.2 kcal mol--1 when large local domains are used. For larger systems, results using different thresholds for the local approximations are compared to demonstrate that 1 kcal mol--1 level of accuracy can be achieved using our default settings. For a couple of difficult cases, it is demonstrated that the errors from individual approximations are only a fraction of 1 kcal mol--1, and the overall accuracy of the method does not rely on error compensations. In contrast to canonical calculations, the use of spin-orbitals does not lead to a significant increase of computational time and memory usage in the most expensive steps of PNO-R/UCCSD(T)-F12 calculations. The only exception is the iterative solution of the (T) amplitudes, which can be avoided without significant errors by using a perturbative treatment of the off-diagonal coupling, known as (T1) approximation. For most systems, even the semicanonical approximation (T0) leads only to small errors in relative energies. Our program is well parallelized and capable of computing accurate correlation energies for molecules with 100--200 atoms using augmented triple-{$\zeta$} basis sets in less than a day of elapsed time on a small computer cluster.}
+}
+
+@article{pno-lccsdt-f12b,
+  title     = {Explicitly Correlated Coupled Cluster Methods with Pair-Specific Geminals},
+  author    = {Werner, Hans-Joachim and Knizia, Gerald and Manby, Frederick R.},
+  year      = {2011},
+  month     = {2},
+  journal   = {Molecular Physics},
+  volume    = {109},
+  number    = {3},
+  pages     = {407--417},
+  publisher = {Taylor \& Francis},
+  issn      = {0026-8976},
+  doi       = {10.1080/00268976.2010.526641},
+  urldate   = {2024-12-13},
+  abstract  = {Explicitly correlated MP2-F12 and CCSD(T)-F12 methods with orbital-pair-specific Slater-type geminals are proposed. The fixed amplitude ansatz of Ten-no is used, and different exponents of the Slater geminal functions can be chosen for core--core, core--valence, and valence--valence pairs. This takes care of the different sizes of the correlation hole and leads to improved results when inner-shell orbitals are correlated. The complications and the extra computational cost as compared to corresponding calculations with a single geminal are minor. The improved accuracy of the method is demonstrated for spectroscopic properties of Br2, As2, Ga2, Cu2, GaCl, CuCl, and CuBr, where the d-orbitals are treated as core.},
+  keywords  = {core-valence correlation,coupled-cluster,explicit correlation,F12-methods}
+}
+
+
+%-----------------------------------------------------------------------------
+%   EXTRAPOLATION
+%-----------------------------------------------------------------------------
+
+@article{extrapolation-cps-1,
+  author  = {Altun, Ahmet and Neese, Frank and Bistoni, Giovanni},
+  title   = {Extrapolation to the Limit of a Complete Pair Natural Orbital Space in Local Coupled-Cluster Calculations},
+  journal = {Journal of Chemical Theory and Computation},
+  volume  = {16},
+  number  = {10},
+  pages   = {6142-6149},
+  year    = {2020},
+  doi     = {10.1021/acs.jctc.0c00344},
+  note    = {PMID: 32897712},
+  url     = {https://doi.org/10.1021/acs.jctc.0c00344},
+  eprint  = {https://doi.org/10.1021/acs.jctc.0c00344}
+}
+@article{extrapolation-cps-2,
+  author  = {Altun, Ahmet and Ghosh, Soumen and Riplinger, Christoph and Neese, Frank and Bistoni, Giovanni},
+  title   = {Addressing the System-Size Dependence of the Local Approximation Error in Coupled-Cluster Calculations},
+  journal = {The Journal of Physical Chemistry A},
+  volume  = {125},
+  number  = {45},
+  pages   = {9932-9939},
+  year    = {2021},
+  doi     = {10.1021/acs.jpca.1c09106},
+  note    = {PMID: 34730360},
+  url     = {https://doi.org/10.1021/acs.jpca.1c09106},
+  eprint  = {https://doi.org/10.1021/acs.jpca.1c09106s}
+}
+
+@article{tew.2020-pno-false-convergence,
+  title    = {Basis Set Extrapolation in Pair Natural Orbital Theories},
+  author   = {Sorathia, Kesha and Tew, David P.},
+  year     = {2020},
+  month    = {11},
+  journal  = {The Journal of Chemical Physics},
+  volume   = {153},
+  number   = {17},
+  pages    = {174112},
+  issn     = {0021-9606},
+  doi      = {10.1063/5.0022077},
+  urldate  = {2024-12-13},
+  abstract = {We present the results of a benchmark study of the effect of Pair Natural Orbital (PNO) truncation errors on the performance of basis set extrapolation. We find that reliable conclusions from the application of Helgaker's extrapolation method are only obtained when using tight PNO thresholds of at least 10-7. The use of looser thresholds introduces a significant risk of observing a false basis set convergence and underestimating the residual basis set errors. We propose an alternative extrapolation approach based on the PNO truncation level that only requires a single basis set and show that it is a viable alternative to hierarchical basis set extrapolation methods.}
+}
