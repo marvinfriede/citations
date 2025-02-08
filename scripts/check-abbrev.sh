@@ -8,4 +8,3 @@ for bibfile in $(find . -type f -name "*.bib"); do
     fi
   done
 done
-
